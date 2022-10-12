@@ -2,17 +2,17 @@
 
 @font-face{
 	font-family: 'FontLogo';
-	src: url("../_portfontes/RACING HARD.ttf");
+	src: url("../portfontes/RACING HARD.ttf");
 }
 
 @font-face{
 	font-family: 'FontA';
-	src: url("../_portfontes/commando.ttf");
+	src: url("../portfontes/commando.ttf");
 }
 
 @font-face{
     font-family: 'FontH2';
-    src: url("../_portfontes/critical-mass-ldr.ttf");
+    src: url("../portfontes/critical-mass-ldr.ttf");
 }
 /* --- CORES ---*/
 :root{
