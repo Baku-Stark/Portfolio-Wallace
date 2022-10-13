@@ -2,17 +2,17 @@
 
 @font-face{
 	font-family: 'FontLogo';
-	src: url("configPort/portfontes/RACING HARD.ttf");
+	src: url("../portfontes/RACING HARD.ttf") format('truetype');
 }
 
 @font-face{
 	font-family: 'FontA';
-	src: url("configPort/portfontes/commando.ttf");
+	src: url("../portfontes/commando.ttf") format('truetype');
 }
 
 @font-face{
     font-family: 'FontH2';
-    src: url("configPort/portfontes/critical-mass-ldr.ttf");
+    src: url("../portfontes/critical-mass-ldr.ttf") format('truetype');
 }
 /* --- CORES ---*/
 :root{
@@ -338,6 +338,6 @@ footer{
     justify-content: space-around;
     color: var(--corLetter);
     box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.5);
-    background-image: url(configPort/portimagens/footer.jfif);
+    background-image: url("../portimagens/footer.jfif");
 }
 /* --- FOOTER ---*/
