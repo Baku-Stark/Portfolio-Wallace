@@ -15,13 +15,13 @@
 
     /* --- NAVBAR ---*/
     .nav-list{
-        top: 8vh;
+        position: absolute;
+        top: 10vh;
         right: 0;
         width: 50vw;
         height: 92vh;
         backdrop-filter: blur(20px);
         transform: translateX(100%);
-        position: absolute;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
@@ -143,12 +143,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     img.badget{
-        height: 35px;
-        margin-top: 10px;
+        height: 40px;
         cursor: pointer;
     }
     /* --- SECTION (SAIBA MAIS) ---*/
