@@ -1,6 +1,6 @@
 /* --- MOBILE (TABLET)---*/
 @media (max-width: 920px){
-    h1{
+    h1.h1{
         font-size: 1.5em;
         text-align: center;
     }
@@ -29,9 +29,9 @@
     }
 
     /* --- NAVBAR ---*/
-    .nav-list{
+    ul.nav-list{
         position: absolute;
-        top: 13vh;
+        top: 12vh;
         right: 0;
         width: 50vw;
         height: 92vh;

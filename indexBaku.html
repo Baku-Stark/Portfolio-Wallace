@@ -27,29 +27,29 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header-port">
+        <nav class="nav-port p-5">
             <img 
                 src="configPort/portimagens/runa2-icon.png" 
                 alt="runa"
                 width="70"
                 height="70"
                 class="runa"/>
-            <h1>Portfólio Wallace Baku-Stark</h1>
+            <h1 class="h1">Portfólio Wallace Baku-Stark</h1>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-list">
+            <ul class="nav-list mb-0 ps-0">
                 <li><a href="#intro">Intro</a></li>
 
                 <li><a href="#projetos">Projetos</a></li>
 
                 <li><a href="#saibamais">Saiba Mais</a></li>
                 
-                <button class="button-port button-curriculo">
-                    <a href="configPort/curriculo/Currículo 2022.pdf" download="Currículo.pdf" id="curriculo">Curriculo<br>Download</a>
+                <button class="button-port button-curriculo p-0">
+                    <a href="configPort/curriculo/Currículo 2022.pdf" download="Currículo.pdf" id="curriculo">Curriculo Download</a>
                 </button>
             </ul>
         </nav>
@@ -164,36 +164,60 @@
                                 <p class="res">*Clique em um modal.</p>
                             </div>
                             <div class="content-bottom-right">
-                                <abbr title="MarkDown">
-                                    <img
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"/>
-                                </abbr>
-                                <abbr title="Python 3.10">
-                                    <img 
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-                                </abbr>
-                                <abbr title="JavaScript">
-                                    <img 
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-                                </abbr>
-                                <abbr title="HTML5">
-                                    <img 
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
-                                </abbr>
-                                <abbr title="CSS3">
-                                    <img 
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/>
-                                </abbr>
-                                <abbr title="Bootstrap">
-                                    <img 
-                                        class="badget"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/>
-                                </abbr>
+                                <!-- MODAL FRONT-END -->
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModalFront"
+                                > Front-End
+                                </button>
+                                <!-- MODAL FRONT-END -->
+                                <div class="modal fade" id="exampleModalFront" tabindex="-1" aria-labelledby="exampleModalLabelFront" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelFront">
+                                                    FRONT-END STRUCTURE
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- MODAL BACK-END -->
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModalBack"
+                                > Back-End
+                                </button>
+                                <!-- MODAL BACK-END -->
+                                <div class="modal fade" id="exampleModalBack" tabindex="-1" aria-labelledby="exampleModalLabelBack" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                    BACK-END STRUCTURE
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,6 +225,7 @@
             </div>
         </section>
     </main>
+
     <footer class="cabecalho">
         <div class="left">
             <p><b>Copyright&copy; 2022</b> - Wallace De Freitas (Baku Stark)</p>
