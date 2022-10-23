@@ -1,22 +1,37 @@
-/* --- MOBILE ---*/
+/* --- MOBILE (TABLET)---*/
 @media (max-width: 920px){
     h1{
         font-size: 1.5em;
         text-align: center;
     }
 
+    h2.intro-text{
+        font-size: 24pt;
+    }
+
     h2{
         font-size: 1.2em;
     }
 
-    .tamaki-photo{
+    img.astro{
+        width: 60%;
+        margin: auto;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    img.tamaki-photo{
         display: none;
+    }
+
+    button.button-port.button-curriculo{
+        margin-left: 0;
     }
 
     /* --- NAVBAR ---*/
     .nav-list{
         position: absolute;
-        top: 10vh;
+        top: 13vh;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -71,26 +86,31 @@
     }
     /* --- NAVBAR ---*/
 
-    /* --- CONTEÚDO ---*/
-    .container{
-        height: 100%;
-    }
-    .content-container{
-        height: 100%;
-        padding: 10px;
-        margin-top: 5vh;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    /* --- CONTEÚDO ---*/
-
-    /* --- SECTION (PROJETOS) ---*/
+    /* --- SECTION (INTRODUÇÃO) ---*/
     section.content{
         width: 100%;
         height: 122vh;
     }
 
+    section.content.content-intro{
+        height: 70vh;
+    }
+
+    section.container{
+        height: 100%;
+    }
+
+    .content-container{
+        height: 100%;
+        padding: 10px;
+        margin-top: 20%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    /* --- SECTION (INTRODUÇÃO) ---*/
+
+    /* --- SECTION (PROJETOS) ---*/
     .content-container-projects{
         height: 100vh;
         padding: 10px;
@@ -121,6 +141,10 @@
     /* --- SECTION (PROJETOS) ---*/
 
     /* --- SECTION (SAIBA MAIS) ---*/
+    .container-port{
+        width: 100%;
+        height: 100%;
+    }
     .content-top h2{
         text-align: center;
     }
@@ -153,7 +177,7 @@
     /* --- SECTION (SAIBA MAIS) ---*/
 
     /* --- FOOTER ---*/
-    footer{
+    footer.cabecalho{
         width: 100%;
         height: 25vh;
         font-size: 10pt;
@@ -161,7 +185,7 @@
         box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.555);
     }
 
-    footer img{
+    footer.cabecalho img{
         width: 80px;
         height: 80px;
     }

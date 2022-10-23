@@ -7,10 +7,22 @@
     <title>Wallace | Portfólio</title>
     <!--CSS PRINCIPAL-->
     <link rel="stylesheet" href="configPort/css/port.css">
-    <!--MEDIA QUERY-->
+    
+    <!-- ----- CSS (BOOTSTRAP) ----- -->
+    <!-- CSS (Bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Icons (Bootstrap) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- ----- CSS (BOOTSTRAP) ----- -->
+
+    <!--MEDIA QUERY (920px)-->
     <link rel="stylesheet" href="configPort/css/920px.css">
+    <!--MEDIA QUERY (470px)-->
+    <link rel="stylesheet" href="configPort/css/470px.css">
+
     <!--ICON DO PORFÓLIO-->
     <link rel="shortcut icon" href="configPort/portimagens/runa-icon.png">
+
     <!--SCROLLREVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -36,7 +48,7 @@
 
                 <li><a href="#saibamais">Saiba Mais</a></li>
                 
-                <button>
+                <button class="button-port button-curriculo">
                     <a href="configPort/curriculo/Currículo 2022.pdf" download="Currículo.pdf" id="curriculo">Curriculo<br>Download</a>
                 </button>
             </ul>
@@ -48,30 +60,41 @@
                 <img 
                     src="configPort/portimagens/main_image.png"
                     class="astro"
-                    alt="Astronauta"
-                >
+                    alt="Astronauta">
                 <h2 class="intro-text">Hello, World!</h2>
                 <div class="contacts">
-                    <form>
-                        <button>
-                            <a href="https://twitter.com/Walleemc2" target="_blank">Twitter</a>
+                    <form class="form-contacts">
+                        <button class="button-port">
+                            <a href="https://twitter.com/Walleemc2" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
                         </button>
-                        <button>
-                            <a href="https://www.instagram.com/wallace_emc2/" target="_blank">Instagram</a>
+                        <button class="button-port">
+                            <a href="https://www.instagram.com/wallace_emc2/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
                         </button>
-                        <button>
-                            <a href="https://www.linkedin.com/in/wallace-freitas-92a2061b6/" target="_blank">LinkedIN</a>
+                        <button class="button-port">
+                            <a href="https://www.linkedin.com/in/wallace-freitas-92a2061b6/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                                LinkedIN
+                            </a>
                         </button>
-                        <button>
-                            <a href="https://github.com/Baku-Stark" target="_blank">GitHub</a>
+                        <button class="button-port">
+                            <a href="https://github.com/Baku-Stark" target="_blank">
+                                <i class="bi bi-github"></i>
+                                GitHub
+                            </a>
                         </button>
                     </form>
                 </div>
             </div>
         </div>
 
-        <section id="intro" class="content">
-            <div class="container">
+        <section id="intro" class="content content-intro">
+            <div class="container-port">
                 <h2 class="title-1">INTRODUCTION</h2>
                 <div class="content-container">
                     <p>
@@ -86,8 +109,8 @@
             </div>
         </section>
 
-        <section id="projetos" class="content">
-            <div class="container">
+        <section id="projetos" class="content content-proje">
+            <div class="container-port">
                 <h2 class="title-1">PROJECTS</h2>
                 <div class="content-container-projects">
                     <div class="card-container">
@@ -124,8 +147,8 @@
             </div>
         </section>
 
-        <section id="saibamais" class="content">
-            <div class="container">
+        <section id="saibamais" class="content content-saiba">
+            <div class="container-port">
                 <h2 class="title-1">SAIBA MAIS</h2>
                 <div class="content-container">
                     <div class="content-profile">
@@ -138,7 +161,7 @@
                         </div>
                         <div class="content-bottom">
                             <div class="content-bottom-left">
-                                <p class="res">*Passe o mouse em algum icon: None</p>
+                                <p class="res">*Clique em um modal.</p>
                             </div>
                             <div class="content-bottom-right">
                                 <abbr title="MarkDown">
@@ -178,17 +201,22 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="cabecalho">
         <div class="left">
             <p><b>Copyright&copy; 2022</b> - Wallace De Freitas (Baku Stark)</p>
-            <br><p>Gmail: tamakiamajiki360@gmail.com</p>
-            <br><p>Outlook: wallacefmds360@outlook.com</p>
+            <p>
+                Gmail: tamakiamajiki360@gmail.com
+                <br>Outlook: wallacefmds360@outlook.com
+            </p>
         </div>
         <div class="right">
             <img src="configPort/portimagens/runa2-icon.png" alt="runa" height="300" width="300">
         </div>
     </footer>
 
+    <!-- JavaScript (Scroll Reveal) -->
     <script src="configPort/js/reveal-navbar.js"></script>
+    <!-- JavaScript (Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

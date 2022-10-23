@@ -104,22 +104,32 @@ nav{
     color: var(--corLinkHover);
 }
 
-button{
+div.contacts{
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+button.button-port.button-curriculo{
+    margin-left: 15px;
+    width: 150px;
+}
+
+button.button-port{
+    width: 150px;
     padding: 13px;
-    margin-left: 10px;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
     border: 1px solid #2b0279;
     background: #000000;
 }
 
-button:hover{
+button.button-port:hover{
     transition: 0.3s ease-in-out;
     background: #2b0279;
     border: 1px solid #000000;
 }
 
-button > a{
+button.button-port > a{
     font-size: 14pt;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -127,7 +137,7 @@ button > a{
     font-family: 'FontA';
 }
 
-button > a:hover{
+button.button-port > a:hover{
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
     color: #f0f8ff;
@@ -150,11 +160,11 @@ button > a:hover{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.astro{
+img.astro{
     margin: auto;
     border-radius: 50%;
     display: flex;
-} 
+}
 
 .intro-text{
     font-size: 40pt;
@@ -174,10 +184,6 @@ button > a:hover{
     } 50% {
         transform: translateY(-100px);
     }
-}
-
-.contacts{
-    text-align: center;
 }
 
 main{
@@ -207,7 +213,7 @@ section.content{
     backdrop-filter: blur(10px);
 }
 
-.container{
+.container-port{
     padding: 100px 45px;
 }
 
@@ -302,13 +308,13 @@ img.wallace{
 .content-bottom-left{
     width: 50%;
     height: 100%;
-    font-size: 1.6em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .content-bottom-left > p{
+    font-size: 1.6em;
     font-family: 'FontA';
 }
 
@@ -328,7 +334,7 @@ img.badget{
 /* --- SECTION (SAIBA MAIS) ---*/
 
 /* --- FOOTER ---*/
-footer{
+footer.cabecalho{
     width: 100%;
     height: 50vh;
     display: flex;

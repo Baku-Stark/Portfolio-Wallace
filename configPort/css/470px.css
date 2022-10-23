@@ -1,0 +1,70 @@
+@media (max-width: 400px){
+    /* --- NAVBAR ---*/
+    img.runa{
+        width: 30px;
+        height: 30px;
+    }
+    h1{
+        font-size: 20pt;
+    }
+
+    h2.intro-text{
+        font-size: 15pt;
+    }
+
+    h2.title-1{
+        font-size: 12pt;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 13vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        backdrop-filter: blur(20px);
+        transform: translateX(100%);
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: 0.3s ease-in-out;
+        background: #0000009c;
+    }
+    /* --- NAVBAR ---*/
+
+    /* --- PORTFÓLIO ---*/
+    img.astro{
+        width: 70%;
+        margin: auto;
+        border-radius: 50%;
+        display: flex;
+    }
+    /* --- PORTFÓLIO ---*/
+
+    /* --- SECTION (INTRODUÇÃO) ---*/
+    section.content.content-intro {
+        height: 100vh;
+    }
+    /* --- SECTION (INTRODUÇÃO) ---*/
+
+    /* --- SECTION (SAIBA MAIS) ---*/
+    .content-bottom-left > p{
+        font-size: 1.2em;
+        font-family: 'FontA';
+    }
+    /* --- SECTION (SAIBA MAIS) ---*/
+
+    /* --- FOOTER ---*/
+    footer > div.left{
+        padding: 10px;
+    }
+
+    footer > div.right{
+        padding: 10px;
+    }
+    /* --- FOOTER ---*/
+}
