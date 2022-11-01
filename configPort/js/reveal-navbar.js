@@ -1,3 +1,4 @@
+// =============================================================================
 // SLIDE
 var slideUp = {
     delay: 300,
@@ -17,10 +18,21 @@ ScrollReveal().reveal('.astro', slideUp);
 ScrollReveal().reveal('.title-1', slideUp);
 ScrollReveal().reveal('.content-container', slideContent)
 ScrollReveal().reveal('.content-container-projects', slideContent)
+// SLIDE
+// =============================================================================
 
+// =============================================================================
 // EVENTOS
-document.querySelector('p.res').onmouse
+function textDesc(){
+    let badget = document.querySelector(".badget")
+    let desc = document.querySelector(".res")
+    console.log(badget)
+    desc.innerText = 'OI'
+}
+// EVENTOS
+// =============================================================================
 
+// =============================================================================
 // MOBILE
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks) {
@@ -64,3 +76,5 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.init();
+// MOBILE
+// =============================================================================

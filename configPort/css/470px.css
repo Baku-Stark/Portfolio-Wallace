@@ -5,8 +5,9 @@
         width: 30px;
         height: 30px;
     }
+
     h1.h1{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     h2.intro-text{
@@ -59,14 +60,35 @@
     }
     /* --- SECTION (INTRODUÇÃO) ---*/
 
+    /* --- SECTION (PROJETOS) ---*/
+    div.content-container-projects{
+        display: contents;
+    }
+
+    div.container-spell{
+        width: 100%;
+        height: 31vh;
+        margin-top: 20px;
+    }
+
+    div.content-spell > p{
+        padding: 0;
+        margin-top: 0;
+    }
+    /* --- SECTION (PROJETOS) ---*/
+
     /* --- SECTION (SAIBA MAIS) ---*/
     .content-profile{
         height: 100%;
     }
 
     .content-bottom-left > p{
-        font-size: 1.2em;
+        font-size: 0.8em;
         font-family: 'FontA';
+    }
+
+    div.langs{
+        margin-top: 20px;
     }
     /* --- SECTION (SAIBA MAIS) ---*/
 
@@ -80,3 +102,4 @@
     }
     /* --- FOOTER ---*/
 }
+/* --- MOBILE (CELULAR)---*/
