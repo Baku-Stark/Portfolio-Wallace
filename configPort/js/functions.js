@@ -1,38 +1,4 @@
 // =============================================================================
-// SLIDE
-var slideUp = {
-    delay: 300,
-    duration: 1000,
-    reset: true,
-    opacity: 0
-}
-
-var slideContent = {
-    delay: 500,
-    duration: 1000,
-    reset: true,
-    opacity: 0
-}
-
-ScrollReveal().reveal('.astro', slideUp);
-ScrollReveal().reveal('.title-1', slideUp);
-ScrollReveal().reveal('.content-container', slideContent)
-ScrollReveal().reveal('.content-container-projects', slideContent)
-// SLIDE
-// =============================================================================
-
-// =============================================================================
-// EVENTOS
-function textDesc(){
-    let badget = document.querySelector(".badget")
-    let desc = document.querySelector(".res")
-    console.log(badget)
-    desc.innerText = 'OI'
-}
-// EVENTOS
-// =============================================================================
-
-// =============================================================================
 // MOBILE
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks) {
@@ -77,4 +43,38 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 // MOBILE
+// =============================================================================
+
+// =============================================================================
+// SLIDE
+var slideUp = {
+    delay: 300,
+    duration: 1000,
+    reset: true,
+    opacity: 0
+}
+
+var slideContent = {
+    delay: 500,
+    duration: 1000,
+    reset: true,
+    opacity: 0
+}
+
+ScrollReveal().reveal('.astro', slideUp);
+ScrollReveal().reveal('.title-1', slideUp);
+ScrollReveal().reveal('.content-container', slideContent)
+ScrollReveal().reveal('.content-container-projects', slideContent)
+// SLIDE
+// =============================================================================
+
+// =============================================================================
+// EVENTOS
+function textDesc(){
+    let badget = document.querySelector(".badget")
+    let desc = document.querySelector(".res")
+    console.log(badget)
+    desc.innerText = 'OI'
+}
+// EVENTOS
 // =============================================================================
