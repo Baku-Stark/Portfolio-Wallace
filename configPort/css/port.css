@@ -277,7 +277,7 @@ div.container-title-spell{
     background-color: #0c0c0c;
 }
 
-div.container-title-spell > h3{
+div.container-title-spell h3{
     font-size: 1em;
     font-family: 'FontA';
 }
@@ -293,6 +293,16 @@ div.content-spell > p{
 div.content-spell > ol{
     list-style: none;
 }
+
+div.content-spell  a{
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+div.content-spell a:hover{
+    text-decoration: underline;
+}
+
 /* --- SECTION (PROJETOS) ---*/
 
 /* --- SECTION (SAIBA MAIS) ---*/
