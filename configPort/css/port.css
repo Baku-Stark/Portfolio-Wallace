@@ -256,7 +256,7 @@ img.tamaki-photo{
 /* --- SECTION (PROJETOS) ---*/
 div.content-container-projects{
     height: 75vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -270,6 +270,8 @@ div.container-spell{
 }
 
 div.container-title-spell{
+    width: 100%;
+    height: 8vh;
     padding: 10px;
     border-radius: 20px 20px 0 0;
     background-color: #0c0c0c;
@@ -281,12 +283,11 @@ div.container-title-spell > h3{
 }
 
 div.content-spell{
-    padding: 5px;
+    margin-top: 75px;
 }
 
 div.content-spell > p{
     padding: 10px;
-    margin-top: 80px;
 }
 
 div.content-spell > ol{

@@ -1,5 +1,5 @@
 /* --- MOBILE (CELULAR)---*/
-@media (max-width: 470px){
+@media (max-width: 480px){
     /* --- NAVBAR ---*/
     img.runa{
         width: 30px;
@@ -7,15 +7,7 @@
     }
 
     h1.h1{
-        font-size: 1.3em;
-    }
-
-    h2.intro-text{
-        font-size: 15pt;
-    }
-
-    h2.title-1{
-        font-size: 12pt;
+        font-size: 1em;
     }
 
     nav{
@@ -52,6 +44,13 @@
         display: flex;
     }
 
+    h2.intro-text{
+        font-size: 15pt;
+    }
+
+    h2.title-1{
+        font-size: 1.2em;
+    }
     /* --- PORTFÓLIO ---*/
 
     /* --- SECTION (INTRODUÇÃO) ---*/
@@ -72,8 +71,12 @@
     }
 
     div.content-spell > p{
-        padding: 0;
+        padding: 10px 20px;
         margin-top: 0;
+    }
+
+    div.content-spell > p:nth-child(1){
+        padding: 2px;
     }
     /* --- SECTION (PROJETOS) ---*/
 
