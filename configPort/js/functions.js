@@ -70,10 +70,12 @@ ScrollReveal().reveal('.content-container-projects', slideContent);
 
 // =============================================================================
 // EVENTOS
+const badget = document.querySelector("#badget-check").getAttribute("class")
+
 function textDesc(){
-    let badget = document.querySelector(".badget")
     let desc = document.querySelector(".res")
-    console.log(badget)
+    
+    console.log(`${badget}`)
     desc.innerText = 'OI'
 }
 // EVENTOS
