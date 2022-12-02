@@ -1,0 +1,157 @@
+@import '../sass/_variables.scss';
+
+@font-face{
+	font-family: 'Rancing Hard';
+	src: url("../portfontes/RACING HARD.ttf") format('truetype');
+}
+
+@font-face{
+	font-family: 'Commando';
+	src: url("../portfontes/commando.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: 'Critical Mass';
+    src: url("../portfontes/critical-mass-ldr.ttf") format('truetype');
+}
+
+/* --- CONFIGURAÇÃO [geral] ---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $Black;
+}
+
+p{
+    color: $pureWhite;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+button.button-port{
+    padding: 10px 20px;
+    background-color: $Black;
+    font-family: 'Commando';
+    i{
+        color: $pureWhite;
+    }
+    a{
+        text-decoration: none;
+        transition: .3s ease-in-out;
+        color: $pureWhite;
+        &:hover{
+            color: $Cyan;
+            transition: .3s ease-in-out;
+        }
+    }
+    a.twitter:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, $twitter);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: .3s ease-in-out;
+    }
+    a.instagram:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, $instagram);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: .3s ease-in-out;
+    }
+    a.linkedin:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, $linkedin);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: .3s ease-in-out;
+    }
+    a.github:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, $github);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: .3s ease-in-out;
+    }
+}
+/* --- CONFIGURAÇÃO [geral] ---*/
+
+/* --- CONFIGURAÇÃO [navbar] ---*/
+nav.navbar-portfolio{
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(50px);
+    background-color: $lightBlackOPC42;
+    border-bottom: 1px solid $BlackOPC42;
+    @include flexAlignI-JC(center, space-around);
+    h1.navbar-title{
+        font-size: 2.5rem;
+        color: $lightBlue;
+        font-family: 'Rancing Hard';
+    }
+    ul.nav-list{
+        list-style: none;
+        @include flexAlignI-JC(center, space-around);
+        li{
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: 'Commando';
+            a{
+                color: $pureWhite;
+                text-decoration: none;
+                &:hover{
+                    color: $Cyan;
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+/* --- CONFIGURAÇÃO [navbar] ---*/
+
+/* --- CONFIGURAÇÃO [section => stage1] ---*/
+section.stage-1{
+    margin-top: 5vh;
+    div.layer-background{
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url('../portimagens/bg-fluid.png');
+        div.layer-color{
+            background-color: $BlackOPC90;
+            div.layer-block{
+                text-align: center;
+                @include Landing;
+                @include flexFlexDir-JC(column, center);
+                img.astro{
+                    border-radius: 50%;
+                }
+                h2.intro-text{
+                    font-size: 4.5rem;
+                    color: $pureWhite;
+                    animation: float 3s ease-in-out infinite;
+                    text-shadow: 3px 3px 0 $Black, -3px -3px 0 $Cyan;
+                    font-family: 'Critical Mass';
+                }
+                @keyframes float{
+                    0%, 100%{transform: translateY(-20px);}
+                    50%{transform: translateY(-100px);}
+                }
+            }
+        }
+    }
+}
+/* --- CONFIGURAÇÃO [section => stage1] ---*/

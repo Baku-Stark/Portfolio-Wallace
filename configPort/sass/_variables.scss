@@ -1,0 +1,61 @@
+$Black: #0D0D0D;
+$BlackOPC90: #0d0d0de6;
+$BlackOPC50: #0D0D0D79;
+$BlackOPC42: #0D0D0D6b;
+
+$lightBlack: #111111;
+$lightBlackOPC50: #11111179;
+$lightBlackOPC42: #1111116b;
+
+$Cyan: #02FDFD;
+$lightBlue: #50B7F5;
+$darkBlue: #003c5c;
+
+$twitter: #23A4F2, #50B7F5, #80CBF7;
+$instagram: #D93662, #D9328E, #8D33A6, #F2AC57, #F25F29;
+$linkedin:#014283, #0274B3, #EFF6FA;
+$github: #535353, #131313;
+
+$pureWhite: #F2F2F2;
+
+@mixin Landing{
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin flexAlignI-JC($align-items, $justify-content){
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin flexFlexDir-JC($flex-direction, $justify-content){
+    display: flex;
+    align-items: center;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+@mixin screen1200px{
+    @media screen and(min-width: 1200px){
+        @content;
+    }
+}
+
+@mixin media992px{
+    @media screen and(max-width: 992px){
+        @content;
+    }
+}
+
+@mixin media770px{
+    @media screen and(max-width: 770px){
+        @content;
+    }
+}
+
+@mixin media480px{
+    @media screen and(max-width: 480px){
+        @content;
+    }
+}

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Rancing Hard";
+  src: url("../portfontes/RACING HARD.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Commando";
+  src: url("../portfontes/commando.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Critical Mass";
+  src: url("../portfontes/critical-mass-ldr.ttf") format("truetype");
+}
+/* --- CONFIGURAÇÃO [geral] ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D0D0D;
+}
+
+p {
+  color: #F2F2F2;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+button.button-port {
+  padding: 10px 20px;
+  background-color: #0D0D0D;
+  font-family: "Commando";
+}
+button.button-port i {
+  color: #F2F2F2;
+}
+button.button-port a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: #F2F2F2;
+}
+button.button-port a:hover {
+  color: #02FDFD;
+  transition: 0.3s ease-in-out;
+}
+button.button-port a.twitter:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #23A4F2, #50B7F5, #80CBF7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+}
+button.button-port a.instagram:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #D93662, #D9328E, #8D33A6, #F2AC57, #F25F29);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+}
+button.button-port a.linkedin:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #014283, #0274B3, #EFF6FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+}
+button.button-port a.github:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #535353, #131313);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+/* --- CONFIGURAÇÃO [geral] ---*/
+/* --- CONFIGURAÇÃO [navbar] ---*/
+nav.navbar-portfolio {
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: rgba(17, 17, 17, 0.4196078431);
+  border-bottom: 1px solid rgba(13, 13, 13, 0.4196078431);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav.navbar-portfolio h1.navbar-title {
+  font-size: 2.5rem;
+  color: #50B7F5;
+  font-family: "Rancing Hard";
+}
+nav.navbar-portfolio ul.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav.navbar-portfolio ul.nav-list li {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Commando";
+}
+nav.navbar-portfolio ul.nav-list li a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+nav.navbar-portfolio ul.nav-list li a:hover {
+  color: #02FDFD;
+  transition: 0.3s ease-in-out;
+}
+
+/* --- CONFIGURAÇÃO [navbar] ---*/
+/* --- CONFIGURAÇÃO [section => stage1] ---*/
+section.stage-1 {
+  margin-top: 5vh;
+}
+section.stage-1 div.layer-background {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../portimagens/bg-fluid.png");
+}
+section.stage-1 div.layer-background div.layer-color {
+  background-color: rgba(13, 13, 13, 0.9019607843);
+}
+section.stage-1 div.layer-background div.layer-color div.layer-block {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
+  border-radius: 50%;
+}
+section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
+  font-size: 4.5rem;
+  color: #F2F2F2;
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+  text-shadow: 3px 3px 0 #0D0D0D, -3px -3px 0 #02FDFD;
+  font-family: "Critical Mass";
+}
+@-webkit-keyframes float {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+/* --- CONFIGURAÇÃO [section => stage1] ---*//*# sourceMappingURL=style.css.map */
