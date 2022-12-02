@@ -1,4 +1,25 @@
 @charset "UTF-8";
+.custom-shape-divider-bottom-1669994973 {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1669994973 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
+}
+
+.custom-shape-divider-bottom-1669994973 .shape-fill {
+  fill: #808080;
+}
+
 @font-face {
   font-family: "Rancing Hard";
   src: url("../portfontes/RACING HARD.ttf") format("truetype");
@@ -20,15 +41,66 @@
 
 body {
   background-color: #0D0D0D;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+p.text-content {
+  font-size: 0.9em;
   color: #F2F2F2;
   font-family: "Press Start 2P", sans-serif;
 }
 
+div.contacts {
+  z-index: 8;
+}
+
+div.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.section-title {
+  margin-bottom: 50px;
+  color: #131313;
+  font-family: "Critical Mass";
+  text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.2823529412);
+  -webkit-animation: pulse 3s ease-in-out infinite;
+          animation: pulse 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse {
+  0%, 100% {
+    text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.2823529412);
+  }
+  50% {
+    text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.5960784314);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.2823529412);
+  }
+  50% {
+    text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.5960784314);
+  }
+}
+i.badget {
+  color: #F2F2F2;
+}
+i.badget:hover {
+  color: #23A4F2;
+}
+
 .flex {
   display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button.button-port {
@@ -99,7 +171,7 @@ nav.navbar-portfolio {
 }
 nav.navbar-portfolio h1.navbar-title {
   font-size: 2.5rem;
-  color: #50B7F5;
+  color: #23A4F2;
   font-family: "Rancing Hard";
 }
 nav.navbar-portfolio ul.nav-list {
@@ -111,14 +183,14 @@ nav.navbar-portfolio ul.nav-list {
 nav.navbar-portfolio ul.nav-list li {
   padding: 10px 20px;
   font-size: 20px;
-  font-family: "Commando";
+  font-family: Arial, Helvetica, sans-serif;
 }
 nav.navbar-portfolio ul.nav-list li a {
   color: #F2F2F2;
   text-decoration: none;
 }
 nav.navbar-portfolio ul.nav-list li a:hover {
-  color: #02FDFD;
+  color: #535353;
   transition: 0.3s ease-in-out;
 }
 
@@ -173,4 +245,44 @@ section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-te
   }
 }
 
-/* --- CONFIGURAÇÃO [section => stage1] ---*//*# sourceMappingURL=style.css.map */
+/* --- CONFIGURAÇÃO [section => stage1] ---*/
+/* --- CONFIGURAÇÃO [section => stage3] ---*/
+div.card {
+  height: 40vh;
+  margin-bottom: 5vh;
+  border-radius: 25px;
+}
+div.card div.card-body {
+  border-radius: 20px;
+  background-color: #535353;
+}
+div.card div.card-body div.card-header {
+  background-color: #111111;
+  padding: 10px 20px;
+  border-radius: 20px 20px 0 0;
+}
+div.card h3.card-title {
+  font-size: 1.2em;
+  font-family: "Commando";
+}
+div.card div.bot-card {
+  padding: 5px;
+}
+div.card div.bot-card p {
+  font-weight: bold;
+}
+div.card div.bot-card ol {
+  list-style: none;
+}
+div.card div.bot-card ol a {
+  text-decoration: none;
+  color: #0D0D0D;
+}
+div.card div.bot-card ol a:hover {
+  text-decoration: underline;
+}
+div.card div.bot-card ol a:visited {
+  color: #23A4F2;
+}
+
+/* --- CONFIGURAÇÃO [section => stage3] ---*//*# sourceMappingURL=style.css.map */

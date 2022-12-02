@@ -1,4 +1,13 @@
 // =============================================================================
+// SCROLL TOP
+let home = document.getElementById('home')
+home.click(function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+})
+// SCROLL TOP
+// =============================================================================
+
+// =============================================================================
 // MOBILE
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks) {
@@ -47,22 +56,24 @@ mobileNavbar.init();
 
 // =============================================================================
 // SLIDE
-var slideUp = {
+var slide300 = {
+    distance:  '150%',
+    origin: 'left',
     delay: 300,
     duration: 1000,
-    reset: true,
     opacity: 0
 }
 
-var slideContent = {
+var slide500 = {
+    distance:  '150%',
+    origin: 'left',
     delay: 500,
     duration: 1000,
-    reset: true,
     opacity: 0
 }
 
-ScrollReveal().reveal('.delay300', slideUp);
-ScrollReveal().reveal('.delay500', slideUp);
+ScrollReveal().reveal('.slide300', slide300);
+ScrollReveal().reveal('.slide500', slide500);
 // SLIDE
 // =============================================================================
 

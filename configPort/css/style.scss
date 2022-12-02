@@ -1,4 +1,4 @@
-@import '../sass/_variables.scss';
+@import '../sass/_variables.scss', '../sass/wave.scss';
 
 @font-face{
 	font-family: 'Rancing Hard';
@@ -24,15 +24,49 @@
 
 body{
     background-color: $Black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
+p.text-content{
+    font-size: .9em;
     color: $pureWhite;
     font-family: 'Press Start 2P', sans-serif;
 }
 
+div.contacts{
+    z-index: 8;
+}
+
+div.row{
+    @include flexAlignI-JC(center, center)
+}
+
+h2.section-title{
+    margin-bottom: 50px;
+    color: #131313;
+    font-family: 'Critical Mass';
+    text-shadow: 3px 3px 10px #f0f8ff48;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse{
+    0%, 100%{text-shadow: 3px 3px 10px #f0f8ff48;}
+    50%{text-shadow: 3px 3px 10px #f0f8ff98;}
+}
+
+i.badget{
+    color: $pureWhite;
+    &:hover{
+        color: $lightBlue;
+    }
+}
+
 .flex{
     display: flex;
+}
+
+.container{
+    @include flexAlignI-JC(center, center);
 }
 
 button.button-port{
@@ -108,12 +142,12 @@ nav.navbar-portfolio{
         li{
             padding: 10px 20px;
             font-size: 20px;
-            font-family: 'Commando';
+            font-family: Arial, Helvetica, sans-serif;
             a{
                 color: $pureWhite;
                 text-decoration: none;
                 &:hover{
-                    color: $Cyan;
+                    color: $lightGray;
                     transition: .3s ease-in-out;
                 }
             }
@@ -155,3 +189,43 @@ section.stage-1{
     }
 }
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
+
+/* --- CONFIGURAÇÃO [section => stage3] ---*/
+div.card{
+    height: 40vh;
+    margin-bottom: 5vh;
+    border-radius: 25px;
+    div.card-body{
+        border-radius: 20px;
+        background-color: $lightGray;
+        div.card-header{
+            background-color: $lightBlack;
+            padding: 10px 20px;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    h3.card-title{
+        font-size: 1.2em;
+        font-family: 'Commando';
+    }
+    div.bot-card{
+        padding: 5px;
+        p{
+            font-weight: bold;
+        }
+        ol{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $Black;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &:visited{
+                    color: $lightBlue;
+                }
+            }
+        }
+    }
+}
+/* --- CONFIGURAÇÃO [section => stage3] ---*/

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- DEVicons ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!--SCROLLREVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--SCROLLREVEAL-->
     
     <!-- ----- CSS (BOOTSTRAP) ----- -->
     <!-- CSS (Bootstrap) -->
@@ -14,9 +17,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- ----- CSS (BOOTSTRAP) ----- -->
 
-    <!--SCROLLREVEAL-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--SCROLLREVEAL-->
+    <!-- DEVicons ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- DEVicons ICONS -->
 
     <!--CSS PRINCIPAL-->
     <link rel="stylesheet" href="configPort/css/style.css">
@@ -41,21 +44,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar-portfolio p-0">
+        <nav class="navbar-portfolio p-1">
             <img 
                 src="configPort/portimagens/runa2-icon.png" 
                 alt="runa"
                 width="40"
                 height="45"
                 class="runa"/>
-            <h1 class="navbar-title">Portfólio Wallace Baku-Stark</h1>
+            <h1 class="navbar-title">Portfolio Baku-Stark</h1>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list  mb-0 ps-0">
-                <li><a href="#intro">Intro</a></li>
+                <li><a href="#" id="home">Intro</a></li>
 
                 <li><a href="#projetos">Projetos</a></li>
 
@@ -63,9 +66,9 @@
                 
                 <button class="button-port">
                     <a
-                    href="configPort/curriculo/Currículo 2022.pdf"
-                    download="Currículo.pdf"
-                    id="curriculo"
+                        href="configPort/curriculo/Currículo 2022.pdf"
+                        download="Currículo.pdf"
+                        id="curriculo"
                     >Curriculo Download
                     </a>
                 </button>
@@ -73,15 +76,23 @@
         </nav>
     </header>
     <main>
-        <section id="intro" class="stage-1">
+        <!-- Introdução -->
+        <section class="stage-1">
+            <div class="custom-shape-divider-bottom-1669994973">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
             <div class="layer-background">
                 <div class="layer-color">
                     <div class="layer-block">
                         <img 
                             src="configPort/portimagens/main_image.png"
-                            class="astro delay300"
+                            class="astro slide300"
                             alt="Astronauta">
-                        <h2 class="intro-text">Hello, World!</h2>
+                        <h2 class="intro-text slide500">Hello, World!</h2>
                         <div class="contacts">
                             <button class="button-port">
                                 <a
@@ -124,94 +135,126 @@
                 </div>
             </div>
         </section>
-
         <section class="stage-2">
-            <div class="container-port">
-                <h2 class="title-1">INTRODUCTION</h2>
-                <div class="content-container">
-                    <p>
-                        Olá, visitante! Prazer! Me chamo Wallace de Freitas, mas também pode me chamar pelo meu nick "Baku Stark".
-                        <br>Meu começo na programação veio pelo Curso Em Vídeo (Python - 3 módulos completos). Desde então, continuo aprimorando minhas habilidades no desenolvimento Front e Back End.
-                    </p>
-                    <img
-                        src="configPort/portimagens/tamaki.png"
-                        class="tamaki-photo"
-                        alt="Tamaki Hero"/>
+            <div class="container">
+                <div class="row slide300">
+                    <div class="col-12">
+                        <h2 class="section-title">INTRODUCTION</h2>
+                    </div>
+                    <div class="col-md-6 slide500">
+                        <p class="text-content">
+                            Olá, visitante! Prazer! Me chamo Wallace de Freitas, mas também pode me chamar pelo meu nick "Baku Stark".
+                        </p>
+                        <p class="text-content">
+                            Meu começo na programação veio pelo Curso Em Vídeo (Python - 3 módulos completos). Desde então, continuo aprimorando constantemente as minhas habilidades no desenolvimento Front e Back End, visando ser um excelente profissional na área Full Stack.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img
+                            src="configPort/portimagens/tamaki.png"
+                            class="tamaki-photo"
+                            alt="Tamaki Amajiki Hero"
+                            width="400"
+                            height="400"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="projetos" class="content">
-            <div class="container-port">
-                <h2 class="title-1">PROJECTS</h2>
-                <div class="content-container-projects">
-                    <div class="container-spell">
-                        <div class="container-title-spell">
-                            <h3>
-                                <i class="bi bi-check-all" style="color: #4004a1; font-size: 15pt;"></i>
-                                Projetos Python
-                                <i class="devicon-python-plain"></i>
-                            </h3>
-                        </div>
-                        <div class="content-spell">
-                            <p>
-                                Projetos realizados utizando a linguagem Python (3.10).
-                            </p>
-                            <ol>
-                                <li>
-                                    <a href="https://github.com/Baku-Stark/Portfolio-Projects/tree/main/Projetos/Python/Lista%20Telef%C3%B4nica">
-                                        Lista Telefônica
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Baku-Stark/Portfolio-Projects/blob/main/Projetos/Python/Calculadora%20de%20Idade.py">
-                                        Calculadora de Idade
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Baku-Stark/Portfolio-Projects/tree/main/Projetos/Python/Player%20de%20Musica">
-                                        Player de Música
-                                    </a>
-                                </li>
-                            </ol>
+        <!-- Projetos -->
+        <section id="projetos" class="stage-3">
+            <div class="container">
+                <div class="row slide300">
+                    <div class="col-12">
+                        <h2 class="section-title slide300">PROJECTS</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-dark">
+                            <div class="card-body p-0">
+                                <div class="card-header mb-3">
+                                    <h3 class="card-title mb-0">
+                                        <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
+                                        Projetos Python
+                                        <i class="devicon-python-plain badget"></i>
+                                    </h3>
+                                </div>
+                                <div class="bot-card">
+                                    <p>
+                                        Projetos realizados utizando a linguagem Python (3.10).
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <a href="https://github.com/Baku-Stark/Portfolio-Projects/tree/main/Projetos/Python/Lista%20Telef%C3%B4nica">
+                                                Lista Telefônica
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/Baku-Stark/Portfolio-Projects/blob/main/Projetos/Python/Calculadora%20de%20Idade.py">
+                                                Calculadora de Idade
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/Baku-Stark/Portfolio-Projects/tree/main/Projetos/Python/Player%20de%20Musica">
+                                                Player de Música
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container-spell">
-                        <div class="container-title-spell">
-                            <h3>
-                                <i class="bi bi-check-all" style="color: #4004a1; font-size: 15pt;"></i>
-                                Projeto Glass 2.0
-                                <i class="devicon-html5-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                                <i class="devicon-bootstrap-plain"></i>
-                            </h3>
-                        </div>
-                        <div class="content-spell">
-                            <p>
-                                Recriando o projeto Google Glass (Curso Em Vídeo) utilizado HTML5, CSS3 e Bootstrap.
-                                <a href="https://baku-stark.github.io/Project-Glass-2.0/index.html">
-                                    Link
-                                </a>
-                            </p>
+                    <div class="col-md-4">
+                        <div class="card border-dark">
+                            <div class="card-body p-0">
+                                <div class="card-header mb-3">
+                                    <h3 class="card-title mb-0 mb-0">
+                                        <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
+                                        Projeto Glass 2.0
+                                        <i class="devicon-html5-plain badget"></i>
+                                        <i class="devicon-css3-plain badget"></i>
+                                        <i class="devicon-bootstrap-plain badget"></i>
+                                    </h3>
+                                </div>
+                                <div class="bot-card">
+                                    <p>
+                                        Recriando o projeto Google Glass (Curso Em Vídeo) utilizado HTML5, CSS3 e Bootstrap.
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <a href="https://baku-stark.github.io/Project-Glass-2.0/index.html">
+                                                Link
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container-spell">
-                        <div class="container-title-spell">
-                            <h3>
-                                <i class="bi bi-check-all" style="color: #4004a1; font-size: 15pt;"></i>
-                                Black Panther
-                                <i class="devicon-html5-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                                <i class="devicon-sass-original"></i>
-                            </h3>
-                        </div>
-                        <div class="content-spell">
-                            <p>
-                                Com o lançamento da sequência do filme solo do super-herói Pantera Negra, em 9 de novembro, criei um projeto em homenagem ao personagem.
-                                <a href="#">
-                                    Link
-                                </a>
-                            </p>
+                    <div class="col-md-4">
+                        <div class="card border-dark">
+                            <div class="card-body p-0">
+                                <div class="card-header mb-3">
+                                    <h3 class="card-title mb-0">
+                                        <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
+                                        Black Panther
+                                        <i class="devicon-html5-plain badget"></i>
+                                        <i class="devicon-css3-plain badget"></i>
+                                        <i class="devicon-sass-original badget"></i>
+                                    </h3>
+                                </div>
+                                <div class="bot-card">
+                                    <p>
+                                        Com o lançamento da sequência do filme solo do super-herói Pantera Negra, em 9 de novembro, criei um projeto em homenagem ao personagem.
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <a href="https://baku-stark.github.io/Black-Panther/">
+                                                Link
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,7 +315,6 @@
             </div>
         </section>
     </main>
-
     <footer class="cabecalho">
         <div class="left">
             <p><b>Copyright&copy; 2022</b> - Wallace De Freitas (Baku Stark)</p>
@@ -286,7 +328,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript (Scroll Reveal) -->
+    <!-- JavaScript (Portfólio) -->
     <script src="configPort/js/functions.js"></script>
 
     <!-- JavaScript (Bootstrap) -->
