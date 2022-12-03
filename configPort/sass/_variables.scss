@@ -47,8 +47,8 @@ $lightGray: #535353;
     }
 }
 
-@mixin media992px{
-    @media screen and(max-width: 992px){
+@mixin media999px{
+    @media screen and(max-width: 999px){
         @content;
     }
 }

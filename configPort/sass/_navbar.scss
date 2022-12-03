@@ -1,0 +1,87 @@
+/* --- CONFIGURAÇÃO [navbar] ---*/
+nav.navbar-portfolio{
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(50px);
+    background-color: $lightBlackOPC42;
+    border-bottom: 1px solid $BlackOPC42;
+    @include flexAlignI-JC(center, space-around);
+    h1.navbar-title{
+        font-size: 2.5rem;
+        color: $lightBlue;
+        font-family: 'Rancing Hard';
+        @include media480px{
+            font-size: 1.5rem;
+        }
+    }
+    div.mobile-menu{
+        cursor: pointer;
+        display: none;
+        div{
+            height: 2px;
+            width: 32px;
+            margin: 8px;
+            transition: .3s;
+            background-color: $pureWhite;
+        }
+        @include media999px{
+            display: block;
+        }
+    }
+    div.mobile-menu.active div.line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    div.mobile-menu.active div.line2{
+        opacity: 0;
+    }
+    div.mobile-menu.active div.line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    ul.nav-list{
+        list-style: none;
+        @include flexAlignI-JC(center, space-around);
+        @include media999px{
+            top: 8vh;
+            right: 0;
+            width: 50vw;
+            height: 92vh;
+            backdrop-filter: blur(100px);
+            -moz-backdrop-filter: blur(100px);
+            -webkit-backdrop-filter: blur(100px);
+            transform: translateX(100%);
+            position: absolute;
+            @include flexFlexDir-JC(column, space-evenly);
+            transition: transform 0.3s ease-in-out;
+            background-color: $lightBlack;
+        }
+        li{
+            padding: 10px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            @include media999px{
+                opacity: 0;
+            }
+            a{
+                color: $pureWhite;
+                text-decoration: none;
+                &:hover{
+                    color: $lightGray;
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+    ul.nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade{
+        from{opacity: 0;transform: translateX(100px);}
+        to{opacity: 1;transform: translateX(0);}
+    }
+}
+/* --- CONFIGURAÇÃO [navbar] ---*/

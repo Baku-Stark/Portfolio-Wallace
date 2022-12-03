@@ -1,4 +1,4 @@
-@import '../sass/_variables.scss', '../sass/wave.scss';
+@import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar';
 
 @font-face{
 	font-family: 'Rancing Hard';
@@ -27,7 +27,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p.text-content{
+p.text-content, p.res{
     font-size: .7em;
     color: $pureWhite;
     font-family: 'Press Start 2P', sans-serif;
@@ -54,10 +54,14 @@ h2.section-title{
     50%{text-shadow: 3px 3px 10px #f0f8ff98;}
 }
 
-i.badget{
+i.badget-card{
+    font-size: 0.9em;
     color: $pureWhite;
     &:hover{
         color: $lightBlue;
+    }
+    @include media480px{
+        font-size: 0.8em;
     }
 }
 
@@ -75,6 +79,9 @@ i.badget{
 
 .p-page{
     padding: 65px 90px;
+    @include media480px{
+        padding: 65px 22px;
+    }
 }
 
 button.button-port{
@@ -128,43 +135,6 @@ button.button-port{
 }
 /* --- CONFIGURAÇÃO [geral] ---*/
 
-/* --- CONFIGURAÇÃO [navbar] ---*/
-nav.navbar-portfolio{
-    top: 0;
-    left: 0;
-    z-index: 9;
-    width: 100%;
-    position: fixed;
-    backdrop-filter: blur(50px);
-    background-color: $lightBlackOPC42;
-    border-bottom: 1px solid $BlackOPC42;
-    @include flexAlignI-JC(center, space-around);
-    h1.navbar-title{
-        font-size: 2.5rem;
-        color: $lightBlue;
-        font-family: 'Rancing Hard';
-    }
-    ul.nav-list{
-        list-style: none;
-        @include flexAlignI-JC(center, space-around);
-        li{
-            padding: 10px 20px;
-            font-size: 20px;
-            text-transform: uppercase;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            a{
-                color: $pureWhite;
-                text-decoration: none;
-                &:hover{
-                    color: $lightGray;
-                    transition: .3s ease-in-out;
-                }
-            }
-        }
-    }
-}
-/* --- CONFIGURAÇÃO [navbar] ---*/
-
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
 section.stage-1{
     margin-top: 5vh;
@@ -180,7 +150,13 @@ section.stage-1{
                 @include Landing;
                 @include flexFlexDir-JC(column, center);
                 img.astro{
+                    width: 350px;
+                    height: 350px;
                     border-radius: 50%;
+                    @include media480px{
+                        width: 250px;
+                        height: 250px;
+                    }
                 }
                 h2.intro-text{
                     font-size: 4.5rem;
@@ -188,6 +164,9 @@ section.stage-1{
                     animation: float 3s ease-in-out infinite;
                     text-shadow: 3px 3px 0 $Black, -3px -3px 0 $Cyan;
                     font-family: 'Critical Mass';
+                    @include media480px{
+                        font-size: 2.5rem;
+                    }
                 }
                 @keyframes float{
                     0%, 100%{transform: translateY(-20px);}
@@ -239,22 +218,44 @@ div.card{
 }
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
 
+/* --- CONFIGURAÇÃO [section => saiba mais] ---*/
+i.badget-filter{
+    font-size: 2em;
+    cursor: pointer;
+    color: $pureWhite;
+    &:hover{
+        color: $lightBlue;
+    }
+    @include media480px{
+        font-size: 1em;
+    }
+}
+/* --- CONFIGURAÇÃO [section => saiba mais] ---*/
 
 /* --- CONFIGURAÇÃO [section => footer] ---*/
 footer.cabecalho{
+    padding: 10px 20px;
+    background-size: cover;
     background-image: url(('../portimagens/footer.jfif'));
     div.content-footer-left{
         color: $pureWhite;
         p.content-footer-main{
             font-size: 1em;
             border-bottom: 2px solid #535353;
+            @include media480px{
+                font-size: 0.7em;
+            }
         }
     }
     div.content-footer-right{
         @include flexAlignI-JC(center, center);
         img.runa-footer{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
+            @include media480px{
+                width: 90px;
+                height: 85px;
+            }
         }
     }
 }

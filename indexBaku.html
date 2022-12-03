@@ -25,13 +25,6 @@
     <link rel="stylesheet" href="configPort/css/style.css">
     <!--CSS PRINCIPAL-->
     
-    <!--MEDIA QUERY (920px)-->
-    <link rel="stylesheet" href="configPort/css/920px.css">
-    <!--MEDIA QUERY (760px)-->
-    <link rel="stylesheet" href="configPort/css/780px.css">
-    <!--MEDIA QUERY (480px)-->
-    <link rel="stylesheet" href="configPort/css/480px.css">
-    
     <!-- Fonte Press Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,8 +78,8 @@
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <div class="layer-background">
-                <div class="layer-color">
+            <div class="container-fluid layer-background">
+                <div class="row layer-color">
                     <div class="layer-block">
                         <img 
                             src="configPort/portimagens/main_image.png"
@@ -164,7 +157,7 @@
         <!-- Projetos -->
         <section id="projetos" class="stage-par p-page">
             <div class="container">
-                <div class="row slide300">
+                <div class="row slide300 resetContent">
                     <div class="col-12">
                         <h2 class="section-title slide300">PROJECTS</h2>
                     </div>
@@ -175,7 +168,7 @@
                                     <h3 class="card-title mb-0">
                                         <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
                                         Projetos Python
-                                        <i class="devicon-python-plain badget"></i>
+                                        <i class="devicon-python-plain badget-card"></i>
                                     </h3>
                                 </div>
                                 <div class="bot-card">
@@ -215,9 +208,9 @@
                                     <h3 class="card-title mb-0 mb-0">
                                         <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
                                         Projeto Glass 2.0
-                                        <i class="devicon-html5-plain badget"></i>
-                                        <i class="devicon-css3-plain badget"></i>
-                                        <i class="devicon-bootstrap-plain badget"></i>
+                                        <i class="devicon-html5-plain badget-card"></i>
+                                        <i class="devicon-css3-plain badget-card"></i>
+                                        <i class="devicon-bootstrap-plain badget-card"></i>
                                     </h3>
                                 </div>
                                 <div class="bot-card">
@@ -242,9 +235,9 @@
                                     <h3 class="card-title mb-0">
                                         <i class="bi bi-check-all" style="color: #23A4F2; font-size: 15pt;"></i>
                                         Black Panther
-                                        <i class="devicon-html5-plain badget"></i>
-                                        <i class="devicon-css3-plain badget"></i>
-                                        <i class="devicon-sass-original badget"></i>
+                                        <i class="devicon-html5-plain badget-card"></i>
+                                        <i class="devicon-css3-plain badget-card"></i>
+                                        <i class="devicon-sass-original badget-card"></i>
                                     </h3>
                                 </div>
                                 <div class="bot-card">
@@ -272,21 +265,64 @@
                     <div class="col-12">
                         <h2 class="section-title">SKILLS</h2>
                     </div>
+                    <div class="col-md-6">
+                        <p class="res">
+                            *Passe o mouse ou clique em alguma insígnia.
+                        </p>
+                    </div>
+                    <div class="col-md-6 badgets">
+                        <div class="col">
+                            <i class="devicon-html5-plain badget-filter"
+                            id="html"
+                            >
+                            </i>
+                            <i class="devicon-css3-plain badget-filter"
+                                id="css"
+                            >
+                            </i>
+                            <i class="devicon-bootstrap-plain badget-filter"
+                                id="bootstrap"
+                            >  
+                            </i>
+                            <i class="devicon-sass-original badget-filter"
+                                id="sass"
+                            >
+                            </i>
+                        </div>
+                        <div class="col">
+                            <i class="devicon-javascript-plain badget-filter"
+                            id="javascript"
+                            >
+                            </i>
+                            <i class="devicon-python-plain badget-filter"
+                                id="python"
+                            >
+                            </i>
+                            <i class="devicon-markdown-original badget-filter"
+                                id="markdown"
+                            >
+                            </i>
+                            <i class="devicon-git-plain badget-filter"
+                                id="git-plain"
+                            >
+                            </i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="cabecalho p-page">
-        <div class="container">
-            <div class="row col-12">
-                <div class="col-md-6 content-footer-left">
+    <footer class="cabecalho">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6 col-sm-4 content-footer-left">
                     <p class="content-footer-main">
                         <strong>Copyright &copy; 2022</strong> - Wallace (Baku-Stark)
                     </p>
                     <p><strong>Gmail: </strong><i>tamakiamajiki360@gmail.com</i></p>
                     <p><strong>Outlook: </strong><i>wallacefmds360@outlook.com</i></p>
                 </div>
-                <div class="col-md-6 content-footer-right">
+                <div class="col-6 col-sm-4 content-footer-right">
                     <img
                         src="configPort/portimagens/runa2-icon.png"
                         alt="runa"

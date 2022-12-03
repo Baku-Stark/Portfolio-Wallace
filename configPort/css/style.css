@@ -20,6 +20,125 @@
   fill: #2C2D32;
 }
 
+/* --- CONFIGURAÇÃO [navbar] ---*/
+nav.navbar-portfolio {
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: rgba(17, 17, 17, 0.4196078431);
+  border-bottom: 1px solid rgba(13, 13, 13, 0.4196078431);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav.navbar-portfolio h1.navbar-title {
+  font-size: 2.5rem;
+  color: #23A4F2;
+  font-family: "Rancing Hard";
+}
+@media screen and (max-width: 480px) {
+  nav.navbar-portfolio h1.navbar-title {
+    font-size: 1.5rem;
+  }
+}
+nav.navbar-portfolio div.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+nav.navbar-portfolio div.mobile-menu div {
+  height: 2px;
+  width: 32px;
+  margin: 8px;
+  transition: 0.3s;
+  background-color: #F2F2F2;
+}
+@media screen and (max-width: 999px) {
+  nav.navbar-portfolio div.mobile-menu {
+    display: block;
+  }
+}
+nav.navbar-portfolio div.mobile-menu.active div.line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+nav.navbar-portfolio div.mobile-menu.active div.line2 {
+  opacity: 0;
+}
+nav.navbar-portfolio div.mobile-menu.active div.line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+nav.navbar-portfolio ul.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 999px) {
+  nav.navbar-portfolio ul.nav-list {
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    backdrop-filter: blur(100px);
+    -moz-backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    transform: translateX(100%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease-in-out;
+    background-color: #111111;
+  }
+}
+nav.navbar-portfolio ul.nav-list li {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (max-width: 999px) {
+  nav.navbar-portfolio ul.nav-list li {
+    opacity: 0;
+  }
+}
+nav.navbar-portfolio ul.nav-list li a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+nav.navbar-portfolio ul.nav-list li a:hover {
+  color: #535353;
+  transition: 0.3s ease-in-out;
+}
+nav.navbar-portfolio ul.nav-list.active {
+  transform: translateX(0);
+}
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- CONFIGURAÇÃO [navbar] ---*/
 @font-face {
   font-family: "Rancing Hard";
   src: url("../portfontes/RACING HARD.ttf") format("truetype");
@@ -44,7 +163,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p.text-content {
+p.text-content, p.res {
   font-size: 0.7em;
   color: #F2F2F2;
   font-family: "Press Start 2P", sans-serif;
@@ -86,11 +205,17 @@ h2.section-title {
     text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.5960784314);
   }
 }
-i.badget {
+i.badget-card {
+  font-size: 0.9em;
   color: #F2F2F2;
 }
-i.badget:hover {
+i.badget-card:hover {
   color: #23A4F2;
+}
+@media screen and (max-width: 480px) {
+  i.badget-card {
+    font-size: 0.8em;
+  }
 }
 
 .flex {
@@ -107,6 +232,11 @@ i.badget:hover {
 
 .p-page {
   padding: 65px 90px;
+}
+@media screen and (max-width: 480px) {
+  .p-page {
+    padding: 65px 22px;
+  }
 }
 
 button.button-port {
@@ -160,48 +290,6 @@ button.button-port a.github:hover {
 }
 
 /* --- CONFIGURAÇÃO [geral] ---*/
-/* --- CONFIGURAÇÃO [navbar] ---*/
-nav.navbar-portfolio {
-  top: 0;
-  left: 0;
-  z-index: 9;
-  width: 100%;
-  position: fixed;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  background-color: rgba(17, 17, 17, 0.4196078431);
-  border-bottom: 1px solid rgba(13, 13, 13, 0.4196078431);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-nav.navbar-portfolio h1.navbar-title {
-  font-size: 2.5rem;
-  color: #23A4F2;
-  font-family: "Rancing Hard";
-}
-nav.navbar-portfolio ul.nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-nav.navbar-portfolio ul.nav-list li {
-  padding: 10px 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-nav.navbar-portfolio ul.nav-list li a {
-  color: #F2F2F2;
-  text-decoration: none;
-}
-nav.navbar-portfolio ul.nav-list li a:hover {
-  color: #535353;
-  transition: 0.3s ease-in-out;
-}
-
-/* --- CONFIGURAÇÃO [navbar] ---*/
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
 section.stage-1 {
   margin-top: 5vh;
@@ -225,7 +313,15 @@ section.stage-1 div.layer-background div.layer-color div.layer-block {
   justify-content: center;
 }
 section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+  section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
+    width: 250px;
+    height: 250px;
+  }
 }
 section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
   font-size: 4.5rem;
@@ -234,6 +330,11 @@ section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-te
           animation: float 3s ease-in-out infinite;
   text-shadow: 3px 3px 0 #0D0D0D, -3px -3px 0 #02FDFD;
   font-family: "Critical Mass";
+}
+@media screen and (max-width: 480px) {
+  section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
+    font-size: 2.5rem;
+  }
 }
 @-webkit-keyframes float {
   0%, 100% {
@@ -293,8 +394,26 @@ div.card div.bot-card ol a:visited {
 }
 
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
+/* --- CONFIGURAÇÃO [section => saiba mais] ---*/
+i.badget-filter {
+  font-size: 2em;
+  cursor: pointer;
+  color: #F2F2F2;
+}
+i.badget-filter:hover {
+  color: #23A4F2;
+}
+@media screen and (max-width: 480px) {
+  i.badget-filter {
+    font-size: 1em;
+  }
+}
+
+/* --- CONFIGURAÇÃO [section => saiba mais] ---*/
 /* --- CONFIGURAÇÃO [section => footer] ---*/
 footer.cabecalho {
+  padding: 10px 20px;
+  background-size: cover;
   background-image: url("../portimagens/footer.jfif");
 }
 footer.cabecalho div.content-footer-left {
@@ -304,14 +423,25 @@ footer.cabecalho div.content-footer-left p.content-footer-main {
   font-size: 1em;
   border-bottom: 2px solid #535353;
 }
+@media screen and (max-width: 480px) {
+  footer.cabecalho div.content-footer-left p.content-footer-main {
+    font-size: 0.7em;
+  }
+}
 footer.cabecalho div.content-footer-right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 footer.cabecalho div.content-footer-right img.runa-footer {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (max-width: 480px) {
+  footer.cabecalho div.content-footer-right img.runa-footer {
+    width: 90px;
+    height: 85px;
+  }
 }
 
 /* --- CONFIGURAÇÃO [section => footer] ---*//*# sourceMappingURL=style.css.map */
