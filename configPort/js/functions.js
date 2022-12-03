@@ -72,15 +72,18 @@ var slide500 = {
     opacity: 0
 }
 
+var reset ={
+    reset: true
+}
+
 ScrollReveal().reveal('.slide300', slide300);
 ScrollReveal().reveal('.slide500', slide500);
+ScrollReveal().reveal('.resetContent', reset);
 // SLIDE
 // =============================================================================
 
 // =============================================================================
 // EVENTOS
-const badget = document.querySelector("#badget-check").getAttribute("class")
-
 function textDesc(){
     let desc = document.querySelector(".res")
     

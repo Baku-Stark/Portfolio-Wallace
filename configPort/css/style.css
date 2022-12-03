@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .custom-shape-divider-bottom-1669994973 {
   position: absolute;
-  bottom: -50px;
+  bottom: -33px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -13,11 +13,11 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 49px;
+  height: 120px;
 }
 
 .custom-shape-divider-bottom-1669994973 .shape-fill {
-  fill: #808080;
+  fill: #2C2D32;
 }
 
 @font-face {
@@ -45,7 +45,7 @@ body {
 }
 
 p.text-content {
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: #F2F2F2;
   font-family: "Press Start 2P", sans-serif;
 }
@@ -97,10 +97,16 @@ i.badget:hover {
   display: flex;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.stage-imp {
+  background-color: #2C2D32;
+}
+
+.stage-par {
+  background-color: #0D0D0D;
+}
+
+.p-page {
+  padding: 65px 90px;
 }
 
 button.button-port {
@@ -183,7 +189,8 @@ nav.navbar-portfolio ul.nav-list {
 nav.navbar-portfolio ul.nav-list li {
   padding: 10px 20px;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 nav.navbar-portfolio ul.nav-list li a {
   color: #F2F2F2;
@@ -246,7 +253,7 @@ section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-te
 }
 
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
-/* --- CONFIGURAÇÃO [section => stage3] ---*/
+/* --- CONFIGURAÇÃO [section => projetos] ---*/
 div.card {
   height: 40vh;
   margin-bottom: 5vh;
@@ -285,4 +292,26 @@ div.card div.bot-card ol a:visited {
   color: #23A4F2;
 }
 
-/* --- CONFIGURAÇÃO [section => stage3] ---*//*# sourceMappingURL=style.css.map */
+/* --- CONFIGURAÇÃO [section => projetos] ---*/
+/* --- CONFIGURAÇÃO [section => footer] ---*/
+footer.cabecalho {
+  background-image: url("../portimagens/footer.jfif");
+}
+footer.cabecalho div.content-footer-left {
+  color: #F2F2F2;
+}
+footer.cabecalho div.content-footer-left p.content-footer-main {
+  font-size: 1em;
+  border-bottom: 2px solid #535353;
+}
+footer.cabecalho div.content-footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer.cabecalho div.content-footer-right img.runa-footer {
+  width: 250px;
+  height: 250px;
+}
+
+/* --- CONFIGURAÇÃO [section => footer] ---*//*# sourceMappingURL=style.css.map */

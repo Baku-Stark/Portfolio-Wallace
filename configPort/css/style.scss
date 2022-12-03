@@ -28,7 +28,7 @@ body{
 }
 
 p.text-content{
-    font-size: .9em;
+    font-size: .7em;
     color: $pureWhite;
     font-family: 'Press Start 2P', sans-serif;
 }
@@ -65,8 +65,16 @@ i.badget{
     display: flex;
 }
 
-.container{
-    @include flexAlignI-JC(center, center);
+.stage-imp{
+    background-color: $darkGray;
+}
+
+.stage-par{
+    background-color: $Black;
+}
+
+.p-page{
+    padding: 65px 90px;
 }
 
 button.button-port{
@@ -142,7 +150,8 @@ nav.navbar-portfolio{
         li{
             padding: 10px 20px;
             font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             a{
                 color: $pureWhite;
                 text-decoration: none;
@@ -190,7 +199,7 @@ section.stage-1{
 }
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
 
-/* --- CONFIGURAÇÃO [section => stage3] ---*/
+/* --- CONFIGURAÇÃO [section => projetos] ---*/
 div.card{
     height: 40vh;
     margin-bottom: 5vh;
@@ -228,4 +237,25 @@ div.card{
         }
     }
 }
-/* --- CONFIGURAÇÃO [section => stage3] ---*/
+/* --- CONFIGURAÇÃO [section => projetos] ---*/
+
+
+/* --- CONFIGURAÇÃO [section => footer] ---*/
+footer.cabecalho{
+    background-image: url(('../portimagens/footer.jfif'));
+    div.content-footer-left{
+        color: $pureWhite;
+        p.content-footer-main{
+            font-size: 1em;
+            border-bottom: 2px solid #535353;
+        }
+    }
+    div.content-footer-right{
+        @include flexAlignI-JC(center, center);
+        img.runa-footer{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+/* --- CONFIGURAÇÃO [section => footer] ---*/
