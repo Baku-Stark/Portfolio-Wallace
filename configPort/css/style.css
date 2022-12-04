@@ -40,6 +40,11 @@ nav.navbar-portfolio h1.navbar-title {
   color: #23A4F2;
   font-family: "Rancing Hard";
 }
+@media screen and (max-width: 770px) {
+  nav.navbar-portfolio h1.navbar-title {
+    font-size: 1.7rem;
+  }
+}
 @media screen and (max-width: 480px) {
   nav.navbar-portfolio h1.navbar-title {
     font-size: 1.5rem;
@@ -97,13 +102,14 @@ nav.navbar-portfolio ul.nav-list {
 }
 nav.navbar-portfolio ul.nav-list li {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1em;
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media screen and (max-width: 999px) {
   nav.navbar-portfolio ul.nav-list li {
     opacity: 0;
+    font-size: 1.5em;
   }
 }
 nav.navbar-portfolio ul.nav-list li a {
@@ -180,12 +186,23 @@ div.row {
 }
 
 h2.section-title {
+  font-size: 2rem;
   margin-bottom: 50px;
   color: #131313;
   font-family: "Critical Mass";
   text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.2823529412);
   -webkit-animation: pulse 3s ease-in-out infinite;
           animation: pulse 3s ease-in-out infinite;
+}
+@media screen and (max-width: 770px) {
+  h2.section-title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  h2.section-title {
+    font-size: 1rem;
+  }
 }
 
 @-webkit-keyframes pulse {
@@ -205,19 +222,6 @@ h2.section-title {
     text-shadow: 3px 3px 10px rgba(240, 248, 255, 0.5960784314);
   }
 }
-i.badget-card {
-  font-size: 0.9em;
-  color: #F2F2F2;
-}
-i.badget-card:hover {
-  color: #23A4F2;
-}
-@media screen and (max-width: 480px) {
-  i.badget-card {
-    font-size: 0.8em;
-  }
-}
-
 .flex {
   display: flex;
 }
@@ -233,9 +237,19 @@ i.badget-card:hover {
 .p-page {
   padding: 65px 90px;
 }
+@media screen and (max-width: 770px) {
+  .p-page {
+    padding: 65px 45px;
+  }
+}
 @media screen and (max-width: 480px) {
   .p-page {
     padding: 65px 22px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .p-page {
+    padding: 65px 5px;
   }
 }
 
@@ -317,6 +331,12 @@ section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
   height: 350px;
   border-radius: 50%;
 }
+@media screen and (max-width: 770px) {
+  section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
+    width: 300px;
+    height: 300px;
+  }
+}
 @media screen and (max-width: 480px) {
   section.stage-1 div.layer-background div.layer-color div.layer-block img.astro {
     width: 250px;
@@ -330,6 +350,16 @@ section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-te
           animation: float 3s ease-in-out infinite;
   text-shadow: 3px 3px 0 #0D0D0D, -3px -3px 0 #02FDFD;
   font-family: "Critical Mass";
+}
+@media screen and (max-width: 999px) {
+  section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 480px) {
   section.stage-1 div.layer-background div.layer-color div.layer-block h2.intro-text {
@@ -369,6 +399,18 @@ div.card div.card-body div.card-header {
   padding: 10px 20px;
   border-radius: 20px 20px 0 0;
 }
+div.card div.card-body div.card-header i.badget-card {
+  font-size: 0.9em;
+  color: #F2F2F2;
+}
+div.card div.card-body div.card-header i.badget-card:hover {
+  color: #23A4F2;
+}
+@media screen and (max-width: 480px) {
+  div.card div.card-body div.card-header i.badget-card {
+    font-size: 0.8em;
+  }
+}
 div.card h3.card-title {
   font-size: 1.2em;
   font-family: "Commando";
@@ -405,7 +447,7 @@ i.badget-filter:hover {
 }
 @media screen and (max-width: 480px) {
   i.badget-filter {
-    font-size: 1em;
+    font-size: 3em;
   }
 }
 
@@ -423,9 +465,27 @@ footer.cabecalho div.content-footer-left p.content-footer-main {
   font-size: 1em;
   border-bottom: 2px solid #535353;
 }
+@media screen and (max-width: 770px) {
+  footer.cabecalho div.content-footer-left p.content-footer-main {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 480px) {
   footer.cabecalho div.content-footer-left p.content-footer-main {
     font-size: 0.7em;
+  }
+}
+footer.cabecalho div.content-footer-left p {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 770px) {
+  footer.cabecalho div.content-footer-left p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer.cabecalho div.content-footer-left p {
+    font-size: 0.8em;
   }
 }
 footer.cabecalho div.content-footer-right {
@@ -436,6 +496,12 @@ footer.cabecalho div.content-footer-right {
 footer.cabecalho div.content-footer-right img.runa-footer {
   width: 200px;
   height: 200px;
+}
+@media screen and (max-width: 770px) {
+  footer.cabecalho div.content-footer-right img.runa-footer {
+    width: 100px;
+    height: 100px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer.cabecalho div.content-footer-right img.runa-footer {

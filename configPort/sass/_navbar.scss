@@ -13,6 +13,9 @@ nav.navbar-portfolio{
         font-size: 2.5rem;
         color: $lightBlue;
         font-family: 'Rancing Hard';
+        @include media770px{
+            font-size: 1.7rem;
+        }
         @include media480px{
             font-size: 1.5rem;
         }
@@ -59,11 +62,12 @@ nav.navbar-portfolio{
         }
         li{
             padding: 10px 20px;
-            font-size: 20px;
+            font-size: 1em;
             text-transform: uppercase;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             @include media999px{
                 opacity: 0;
+                font-size: 1.5em;
             }
             a{
                 color: $pureWhite;

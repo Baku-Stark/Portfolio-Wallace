@@ -64,3 +64,9 @@ $lightGray: #535353;
         @content;
     }
 }
+
+@mixin media414px{
+    @media screen and(max-width: 414px){
+        @content;
+    }
+}

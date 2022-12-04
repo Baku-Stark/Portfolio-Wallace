@@ -42,27 +42,23 @@ div.row{
 }
 
 h2.section-title{
+    font-size: 2rem;
     margin-bottom: 50px;
     color: #131313;
     font-family: 'Critical Mass';
     text-shadow: 3px 3px 10px #f0f8ff48;
     animation: pulse 3s ease-in-out infinite;
+    @include media770px{
+        font-size: 1.4rem;
+    }
+    @include media414px{
+        font-size: 1rem;
+    }
 }
 
 @keyframes pulse{
     0%, 100%{text-shadow: 3px 3px 10px #f0f8ff48;}
     50%{text-shadow: 3px 3px 10px #f0f8ff98;}
-}
-
-i.badget-card{
-    font-size: 0.9em;
-    color: $pureWhite;
-    &:hover{
-        color: $lightBlue;
-    }
-    @include media480px{
-        font-size: 0.8em;
-    }
 }
 
 .flex{
@@ -79,8 +75,14 @@ i.badget-card{
 
 .p-page{
     padding: 65px 90px;
+    @include media770px{
+        padding: 65px 45px;
+    }
     @include media480px{
         padding: 65px 22px;
+    }
+    @include media414px{
+        padding: 65px 5px;
     }
 }
 
@@ -153,6 +155,10 @@ section.stage-1{
                     width: 350px;
                     height: 350px;
                     border-radius: 50%;
+                    @include media770px{
+                        width: 300px;
+                        height: 300px;
+                    }
                     @include media480px{
                         width: 250px;
                         height: 250px;
@@ -164,6 +170,12 @@ section.stage-1{
                     animation: float 3s ease-in-out infinite;
                     text-shadow: 3px 3px 0 $Black, -3px -3px 0 $Cyan;
                     font-family: 'Critical Mass';
+                    @include media999px{
+                        font-size: 3.5rem;
+                    }
+                    @include media770px{
+                        font-size: 3rem;
+                    }
                     @include media480px{
                         font-size: 2.5rem;
                     }
@@ -190,6 +202,16 @@ div.card{
             background-color: $lightBlack;
             padding: 10px 20px;
             border-radius: 20px 20px 0 0;
+            i.badget-card{
+                font-size: 0.9em;
+                color: $pureWhite;
+                &:hover{
+                    color: $lightBlue;
+                }
+                @include media480px{
+                    font-size: 0.8em;
+                }
+            }
         }
     }
     h3.card-title{
@@ -227,7 +249,7 @@ i.badget-filter{
         color: $lightBlue;
     }
     @include media480px{
-        font-size: 1em;
+        font-size: 3em;
     }
 }
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
@@ -242,8 +264,20 @@ footer.cabecalho{
         p.content-footer-main{
             font-size: 1em;
             border-bottom: 2px solid #535353;
+            @include media770px{
+                font-size: 0.9em;
+            }
             @include media480px{
                 font-size: 0.7em;
+            }
+        }
+        p{
+            font-size: 1.2em;
+            @include media770px{
+                font-size: 0.9em;
+            }
+            @include media480px{
+                font-size: 0.8em;
             }
         }
     }
@@ -252,6 +286,10 @@ footer.cabecalho{
         img.runa-footer{
             width: 200px;
             height: 200px;
+            @include media770px{
+                width: 100px;
+                height: 100px;
+            }
             @include media480px{
                 width: 90px;
                 height: 85px;
