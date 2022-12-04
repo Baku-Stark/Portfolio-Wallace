@@ -1,4 +1,4 @@
-@import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar';
+@import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar.scss', '../sass/card-profile.scss';
 
 @font-face{
 	font-family: 'Rancing Hard';
@@ -242,7 +242,7 @@ div.card{
 
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
 i.badget-filter{
-    font-size: 2em;
+    font-size: 5em;
     cursor: pointer;
     color: $pureWhite;
     &:hover{

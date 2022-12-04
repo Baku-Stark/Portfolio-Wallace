@@ -145,6 +145,23 @@ nav.navbar-portfolio ul.nav-list.active {
 }
 
 /* --- CONFIGURAÇÃO [navbar] ---*/
+div.card-profile {
+  border-color: none;
+  background-color: #0D0D0D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.card-profile .img-card {
+  height: 40vh;
+  border-radius: 20px 0 0 20px;
+}
+div.card-profile .card-body.description-card {
+  height: 40vh;
+  border-radius: 0 20px 20px 0;
+  background-color: #0D0D0D;
+}
+
 @font-face {
   font-family: "Rancing Hard";
   src: url("../portfontes/RACING HARD.ttf") format("truetype");
@@ -438,7 +455,7 @@ div.card div.bot-card ol a:visited {
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
 i.badget-filter {
-  font-size: 2em;
+  font-size: 5em;
   cursor: pointer;
   color: #F2F2F2;
 }

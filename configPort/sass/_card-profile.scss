@@ -1,0 +1,14 @@
+div.card-profile{
+    border-color: none;
+    background-color: $Black;
+    @include flexAlignI-JC(center, center);
+    .img-card{
+        height: 40vh;
+        border-radius: 20px 0 0 20px;
+    }
+    .card-body.description-card{
+        height: 40vh;
+        border-radius: 0 20px 20px 0;
+        background-color: $Black;
+    }
+}
