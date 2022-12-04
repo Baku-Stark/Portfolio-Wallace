@@ -61,6 +61,11 @@ h2.section-title{
     50%{text-shadow: 3px 3px 10px #f0f8ff98;}
 }
 
+h3.card-title{
+    font-size: 1.2em;
+    font-family: 'Commando';
+}
+
 .flex{
     display: flex;
 }
@@ -214,10 +219,6 @@ div.card{
             }
         }
     }
-    h3.card-title{
-        font-size: 1.2em;
-        font-family: 'Commando';
-    }
     div.bot-card{
         padding: 5px;
         p{
@@ -241,15 +242,24 @@ div.card{
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
 
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
-i.badget-filter{
-    font-size: 5em;
-    cursor: pointer;
-    color: $pureWhite;
-    &:hover{
-        color: $lightBlue;
-    }
-    @include media480px{
-        font-size: 3em;
+div.badgets-content{
+    text-align: center;
+    i.badget-filter{
+        font-size: 5em;
+        cursor: pointer;
+        color: $pureWhite;
+        &:hover{
+            color: $lightBlue;
+        }
+        @include media1199px{
+            font-size: 4em;
+        }
+        @include media999px{
+            font-size: 3.1em;
+        }
+        @include media480px{
+            font-size: 3em;
+        }
     }
 }
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/

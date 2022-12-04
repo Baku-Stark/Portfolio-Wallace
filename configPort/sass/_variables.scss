@@ -47,6 +47,12 @@ $lightGray: #535353;
     }
 }
 
+@mixin media1199px{
+    @media screen and(max-width: 1199px){
+        @content;
+    }
+}
+
 @mixin media999px{
     @media screen and(max-width: 999px){
         @content;
