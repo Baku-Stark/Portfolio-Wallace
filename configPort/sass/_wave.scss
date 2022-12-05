@@ -6,6 +6,9 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    @include media770px{
+        bottom: -65px;
+    }
 }
 
 .custom-shape-divider-bottom-1669994973 svg{

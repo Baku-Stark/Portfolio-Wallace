@@ -12,27 +12,27 @@ function hoverChangeDescription(nameCard, text){
 
 hoverChangeDescription(
     "#html",
-    "[HABILIDADE: 70%] * O HTML5 é responsável por criar a estrutura de um site (componente importante)."
+    "[HABILIDADE: 70%] * HTML5 é responsável por criar a estrutura de um site (componente importante)."
 );
 
 hoverChangeDescription(
     "#css",
-    "[HABILIDADE: 70%] * Folhas CSS servem para estilizar o site."
+    "[HABILIDADE: 70%] * CSS serve para estilizar o site."
 );
 
 hoverChangeDescription(
     "#bootstrap",
-    "[HABILIDADE: 70%] * Framework de CSS que serve como atalho para responsividade do site.."
+    "[HABILIDADE: 70%] * Framework de CSS que serve como atalho para responsividade do site."
 );
 
 hoverChangeDescription(
     "#sass",
-    "[HABILIDADE: 70%] * Extensão de código, servindo para turbinar as CSS."
+    "[HABILIDADE: 70%] * SASS é uma extensão de código, servindo para turbinar as CSS."
 );
 
 hoverChangeDescription(
     "#javascript",
-    "[HABILIDADE: 50%] * Linguagem de programação multi-uso, mas utilizo na área de desenvolvimento Front-End"
+    "[HABILIDADE: 50%] * JavaScript é uma linguagem de programação multi-uso, mas utilizo na área de desenvolvimento Front-End"
 );
 
 hoverChangeDescription(
@@ -42,7 +42,7 @@ hoverChangeDescription(
 
 hoverChangeDescription(
     "#markdown",
-    "[HABILIDADE: 100%] * Linguagem de progrmação para estilização e formatação textual."
+    "[HABILIDADE: 100%] * MarkDown é uma linguagem de progrmação para estilização e formatação textual."
 )
 
 hoverChangeDescription(
