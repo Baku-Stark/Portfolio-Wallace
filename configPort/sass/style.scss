@@ -1,4 +1,4 @@
-@import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar.scss', '../sass/card-profile.scss';
+@import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar.scss', '../sass/card-profile.scss', '../sass/footer.scss';
 
 @font-face{
 	font-family: 'Rancing Hard';
@@ -19,6 +19,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -89,6 +90,17 @@ h3.card-title{
     @include media414px{
         padding: 65px 5px;
     }
+}
+
+.pad-square{
+    padding: 50px 50px;
+    @include media480px{
+        padding: 50px 10px;
+    }
+}
+
+a{
+    text-decoration: none;
 }
 
 button.button-port{
@@ -263,48 +275,3 @@ div.badgets-content{
     }
 }
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
-
-/* --- CONFIGURAÇÃO [section => footer] ---*/
-footer.cabecalho{
-    padding: 10px 20px;
-    background-size: cover;
-    background-image: url(('../portimagens/footer.jfif'));
-    div.content-footer-left{
-        color: $pureWhite;
-        p.content-footer-main{
-            font-size: 1em;
-            border-bottom: 2px solid #535353;
-            @include media770px{
-                font-size: 0.9em;
-            }
-            @include media480px{
-                font-size: 0.7em;
-            }
-        }
-        p{
-            font-size: 1.2em;
-            @include media770px{
-                font-size: 0.9em;
-            }
-            @include media480px{
-                font-size: 0.8em;
-            }
-        }
-    }
-    div.content-footer-right{
-        @include flexAlignI-JC(center, center);
-        img.runa-footer{
-            width: 200px;
-            height: 200px;
-            @include media770px{
-                width: 100px;
-                height: 100px;
-            }
-            @include media480px{
-                width: 90px;
-                height: 85px;
-            }
-        }
-    }
-}
-/* --- CONFIGURAÇÃO [section => footer] ---*/

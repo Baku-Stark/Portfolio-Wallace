@@ -1,0 +1,69 @@
+footer{
+    color: $aliceBlue;
+    background-color: $lightBlack;
+    .config-footer{
+        text-align: center;
+        @include flexAlignI-JC(center, center);
+        @include media480px{
+            margin-bottom: 50px;
+        }
+        h3.footer-title{
+            font-size: 2rem;
+            font-family: 'Rancing Hard';
+        }
+        div.divider-line{
+            width: 2px;
+            height: 60px;
+            margin: 0 20px;
+            background-color: #ffffff62;
+        }
+        p.footer-text{
+            font-size: 1em;
+            color: #ffffffa6;
+            @include media480px{
+                font-size: 0.9em;
+            }
+        }
+        article{
+            margin-left: 10px;
+            display: flex;
+            @include media999px{
+                flex-direction: column;
+            }
+        }
+    }
+    hr.divider-line{
+        margin: 30px 0 30px 0;
+    }
+    .footer-span{
+        font-weight: bold;
+    }
+    li{
+        color: #ffffffa6;
+        a{
+            font-size: 0.9em;
+            color: #ffffffa6;
+            &:hover{
+                cursor: pointer;
+                color: #ffffffa6;
+                text-decoration: underline;
+            }
+            @include media999px{
+                font-size: 0.8em;
+            }
+        }
+    }
+    .config-footer-2{
+        text-align: left;
+        p.footer-text{
+            font-size: 1em;
+            color: #ffffffa6;
+            @include media999px{
+                font-size: 0.9em;
+            }
+            @include media480px{
+                font-size: 0.8em;
+            }
+        }
+    }
+}
