@@ -3,7 +3,7 @@ footer{
     background-color: $lightBlack;
     .config-footer{
         text-align: center;
-        @include flexAlignI-JC(center, center);
+        @include flexAlignI-JC(center, space-evenly);
         @include media480px{
             margin-bottom: 50px;
         }
@@ -28,6 +28,8 @@ footer{
             margin-left: 10px;
             display: flex;
             @include media999px{
+                margin-left: 0;
+                margin-top: 20px;
                 flex-direction: column;
             }
         }
