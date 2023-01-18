@@ -81,6 +81,9 @@ h3.card-title{
 
 .p-page{
     padding: 65px 90px;
+    @media screen and (max-width: 780px){
+
+    }
     @include media770px{
         padding: 65px 45px;
     }
@@ -96,6 +99,14 @@ h3.card-title{
     padding: 50px 50px;
     @include media480px{
         padding: 50px 10px;
+    }
+}
+
+img.tamaki-photo{
+    width: 400px;
+    height: 400px;
+    @include media999px{
+        width: 100%;
     }
 }
 
@@ -208,6 +219,10 @@ section.stage-1{
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
 
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
+div.card.border-dark-special{
+    background-color: #0d0d0d;
+}
+
 div.card{
     height: 40vh;
     margin-bottom: 5vh;
@@ -218,7 +233,7 @@ div.card{
         div.card-header{
             background-color: $lightBlack;
             padding: 10px 20px;
-            border-radius: 20px 20px 0 0;
+            border-radius: 15px 15px 0 0;
             i.badget-card{
                 font-size: 0.9em;
                 color: $pureWhite;
