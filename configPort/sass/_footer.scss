@@ -1,10 +1,44 @@
 footer{
     color: $aliceBlue;
     background-color: $lightBlack;
+    .config-footer-top, .config-footer-mid{
+        display: flex;
+        @include screen1180px{
+            flex-direction: column;
+            align-items: center;
+            .config-footer{
+                margin-bottom: 10px;
+            }
+        }
+        @include screen1020px{
+            flex-direction: column;
+            width: -webkit-fill-available;
+            .config-footer{
+                margin-bottom: 10px;
+            }
+        }
+        @include screen999px{
+            div.config-footer-top-1{
+                inline-size: auto;
+            }
+        }
+        @include screen820px{
+            width: -webkit-fill-available;
+            div.config-footer-top-1{
+                inline-size: auto;
+            }
+        }
+    }
+    .config-footer-top{
+        align-items: center;
+    }
+    .config-footer-mid{
+        align-items: stretch;
+    }
     .config-footer{
         text-align: center;
-        @include flexAlignI-JC(center, space-evenly);
-        @include media480px{
+        @include flexAlignI-JC(center, center);
+        @include screen480px{
             margin-bottom: 50px;
         }
         h3.footer-title{
@@ -20,17 +54,24 @@ footer{
         p.footer-text{
             font-size: 1em;
             color: #ffffffa6;
-            @include media480px{
+            @include screen999px{
                 font-size: 0.9em;
+                inline-size: max-content;
+            }
+            @include screen480px{
+                font-size: 0.9em;
+                inline-size: auto;
             }
         }
         article{
-            margin-left: 10px;
+            margin-left: 5px;
             display: flex;
-            @include media999px{
-                margin-left: 0;
+            @include screen999px{
                 margin-top: 20px;
                 flex-direction: column;
+            }
+            @include screen414px{
+                margin-left: 20px;
             }
         }
     }
@@ -50,20 +91,20 @@ footer{
                 color: #ffffffa6;
                 text-decoration: underline;
             }
-            @include media999px{
+            @include screen999px{
                 font-size: 0.8em;
             }
         }
     }
-    .config-footer-2{
+    .config-footer-bot{
         text-align: left;
         p.footer-text{
             font-size: 1em;
             color: #ffffffa6;
-            @include media999px{
+            @include screen999px{
                 font-size: 0.9em;
             }
-            @include media480px{
+            @include screen480px{
                 font-size: 0.8em;
             }
         }

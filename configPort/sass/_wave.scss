@@ -1,4 +1,4 @@
-.custom-shape-divider-bottom-1669994973{
+div.custom-shape-divider-bottom-1669994973{
     position: absolute;
     bottom: -33px;
     left: 0;
@@ -6,8 +6,19 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    @include media770px{
+    @include screen770px{
         bottom: -65px;
+    }
+
+    @if $width_ref == 1180{
+        @include screen1199px{
+            bottom: -42px; 
+        }
+    }
+    @else{
+        @include screenLandscape{
+            bottom: -42px;
+        }
     }
 }
 

@@ -4,10 +4,10 @@ div.card-profile{
     border-radius: 20px;
     display: flex;
     background-color: $Black;
-    @include media770px{
+    @include screen770px{
         margin-bottom: 30px;
     }
-    @include media480px{
+    @include screen480px{
         height: 240px;
     }
     .img-card, .card-description{
@@ -28,31 +28,31 @@ div.card-profile{
         .title-box-card{
             font-size: 1.8rem;
             border-bottom: 2px solid #535353;
-            @include media1199px{
+            @include screen1199px{
                 font-size: 1.4rem;
             }
-            @include media999px{
+            @include screen999px{
                 font-size: 1rem;
             }
-            @include media770px{
+            @include screen770px{
                 font-size: 1.2rem;
             }
-            @include media480px{
+            @include screen480px{
                 font-size: 1rem;
             }
         }
         .desc-box-card{
             font-size: 1.5rem;
-            @include media1199px{
+            @include screen1199px{
                 font-size: 1.2rem;
             }
-            @include media999px{
+            @include screen999px{
                 font-size: .9rem;
             }
-            @include media770px{
+            @include screen770px{
                 font-size: 1rem;
             }
-            @include media480px{
+            @include screen480px{
                 font-size: 0.9rem;
             }
         }
