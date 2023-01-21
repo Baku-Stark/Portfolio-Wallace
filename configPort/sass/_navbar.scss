@@ -67,6 +67,10 @@ nav.navbar-portfolio{
             height: 96vh;
         }
 
+        @media screen and (max-width: 500px) {
+            top: 8vh;
+        }
+
         @include screen414px{
             top: 6vh;
             height: 94vh;
