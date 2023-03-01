@@ -6,20 +6,6 @@ div.custom-shape-divider-bottom-1669994973{
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    @include screen770px{
-        bottom: -65px;
-    }
-
-    @if $width_ref == 1180{
-        @include screen1199px{
-            bottom: -42px; 
-        }
-    }
-    @else{
-        @include screenLandscape{
-            bottom: -42px;
-        }
-    }
 }
 
 .custom-shape-divider-bottom-1669994973 svg{

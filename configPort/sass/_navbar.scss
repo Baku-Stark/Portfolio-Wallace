@@ -9,71 +9,60 @@ nav.navbar-portfolio{
     background-color: $lightBlackOPC42;
     border-bottom: 1px solid $BlackOPC42;
     @include flexAlignI-JC(center, space-around);
+
     h1.navbar-title{
         font-size: 2.5rem;
         color: $lightBlue;
         font-family: 'Rancing Hard';
-        @include screen770px{
+
+        @include screenTablet-low{
             font-size: 1.7rem;
         }
-        @include screen480px{
+        @include screenPhone{
             font-size: 1.5rem;
         }
     }
+
     div.mobile-menu{
         cursor: pointer;
         display: none;
-        div{
-            height: 2px;
-            width: 32px;
-            margin: 8px;
-            transition: .3s;
-            background-color: $pureWhite;
-        }
-        @include screen999px{
+
+        @include screenTablet{
             display: block;
+
+            button{
+                padding: 10px 20px;
+                border-radius: 15px;
+                color: $aliceBlue;
+                background-color: $Black;
+
+                .bi-x{
+                    font-size: 2rem;
+                }
+
+                &:hover{
+                    color: $lightBlue;
+                }
+            }
         }
+        
     }
-    div.mobile-menu.active div.line1{
-        transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    div.mobile-menu.active div.line2{
-        opacity: 0;
-    }
-    div.mobile-menu.active div.line3{
-        transform: rotate(45deg) translate(-5px, -7px);
-    }
+
     ul.nav-list{
         list-style: none;
         @include flexAlignI-JC(center, space-around);
-        @include screen999px{
-            top: 8vh;
+
+        @include screenTablet{
+            gap: 10vh;
+            top: 0;
             right: 0;
             width: 50vw;
-            height: 92vh;
+            height: 100vh;
             transform: translateX(100%);
             position: absolute;
-            @include flexFlexDir-JC(column, space-evenly);
             transition: transform 0.3s ease-in-out;
             background-color: $lightBlack;
-        }
-
-        @media screen and (max-width: 896px){
-            top: 13vh;
-        }
-
-        @media screen and (max-width: 820px){
-            top: 4.8vh;
-            height: 96vh;
-        }
-
-        @media screen and (max-width: 500px) {
-            top: 8vh;
-        }
-
-        @include screen414px{
-            top: 6vh;
-            height: 94vh;
+            @include flexFlexDir-JC(column, space-evenly);
         }
 
         li{
@@ -81,13 +70,15 @@ nav.navbar-portfolio{
             font-size: 1em;
             text-transform: uppercase;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            @include screen999px{
+
+            @include screenTablet{
                 opacity: 0;
                 font-size: 1.5em;
             }
-            @include screen820px{
-                font-size: 1.9em;
+            @include screenPhone{
+                font-size: 1em;
             }
+
             a{
                 color: $pureWhite;
                 text-decoration: none;
@@ -98,6 +89,7 @@ nav.navbar-portfolio{
             }
         }
     }
+
     ul.nav-list.active{
         transform: translateX(0);
     }

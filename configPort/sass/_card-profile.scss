@@ -4,17 +4,15 @@ div.card-profile{
     border-radius: 20px;
     display: flex;
     background-color: $Black;
-    @include screen770px{
+    @include screenTablet{
         margin-bottom: 30px;
     }
-    @include screen480px{
-        height: 240px;
-    }
-    .img-card, .card-description{
+
+    div.img-card, div.card-description{
         height: 100%;
     }
 
-    .img-card{
+    div.img-card{
         width: 35%;
         border-radius: 20px 0 0 20px;
         background-size: cover;
@@ -22,37 +20,28 @@ div.card-profile{
         background-image: url('../portimagens/wallace.jpg');
     }
 
-    .card-description{
+    div.card-description{
         width: 65%;
         border-radius: 0 20px 20px 0;
-        .title-box-card{
+
+        div.title-box-card{
             font-size: 1.8rem;
             border-bottom: 2px solid #535353;
-            @include screen1199px{
-                font-size: 1.4rem;
-            }
-            @include screen999px{
-                font-size: 1rem;
-            }
-            @include screen770px{
+            @include screenTablet{
                 font-size: 1.2rem;
             }
-            @include screen480px{
+            @include screenPhone{
                 font-size: 1rem;
             }
         }
-        .desc-box-card{
+        
+        div.desc-box-card{
             font-size: 1.5rem;
-            @include screen1199px{
+
+            @include screenTablet{
                 font-size: 1.2rem;
             }
-            @include screen999px{
-                font-size: .9rem;
-            }
-            @include screen770px{
-                font-size: 1rem;
-            }
-            @include screen480px{
+            @include screenPhone{
                 font-size: 0.9rem;
             }
         }

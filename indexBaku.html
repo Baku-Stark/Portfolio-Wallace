@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- file card -->
+    <meta name="description"
+    content="MY PORTFOLIO">
+
+    <meta name="author"
+    content="Baku-Stark">
+
+    <meta name="keywords"
+    content="HTML, CSS, SASS, JAVASCRIPT">
 
     <!--SCROLLREVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -31,7 +40,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Fonte Press Start -->
 
-    <!--ICON DO PORFÓLIO-->
+    <!--ICON DO PORTFÓLIO-->
     <link rel="shortcut icon" href="configPort/portimagens/runa-icon.png">
     <title>Wallace | Portfólio</title>
 </head>
@@ -46,16 +55,28 @@
                 class="runa"/>
             <h1 class="navbar-title mb-0">Portfolio Baku-Stark</h1>
             <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <button>
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
             <ul class="nav-list  mb-0 ps-0">
-                <li><a href="#" id="home">Home</a></li>
+                <div class="mobile-menu close">
+                    <button>
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
 
-                <li><a href="#projetos">Projetos</a></li>
+                <li>
+                    <a href="#" id="home">Home</a>
+                </li>
 
-                <li><a href="#skills">habilidades</a></li>
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="#skills">habilidades</a>
+                </li>
                 
                 <button class="button-port">
                     <a
@@ -70,7 +91,7 @@
     </header>
     <main>
         <!-- Introdução -->
-        <section class="stage-1">
+        <section class="stage-intro">
             <div class="custom-shape-divider-bottom-1669994973">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -302,16 +323,18 @@
     </main>
     <footer>
         <div class="container">
-            <div class="row pad-square">
-                <div class="col-12 config-footer-top">
-                    <div class="col-md-6 config-footer config-footer-top-1">
-                        <h3 class="footer-title mb-0">Baku Stark</h3>
-                        <div class="divider-line"></div>
-                        <h3 class="footer-title mb-0">Wallace</h3>
+            <div class="row">
+                <div class="col content-top padding-basic">
+                    <div class="title-box">
+                        <h3>Baku-Stark</h3>
+                        <div class="divider-top"></div>
+                        <h3>Portfolio</h3>
                     </div>
-                    <div class="col-md-6 config-footer config-footer-top-2">
-                        <p class="footer-text col-4 mb-0">Me acompanhe nas redes sociais</p>
-                        <article>
+                    <div class="social-box">
+                        <span class="sb-text">
+                            Me siga nas redes sociais
+                        </span>
+                        <aside>
                             <button class="button-port">
                                 <a
                                     href="https://twitter.com/Walleemc2"
@@ -348,24 +371,33 @@
                                     <span class="social-media">GitHub</span>
                                 </a>
                             </button>
-                        </article>
+                        </aside>
                     </div>
                 </div>
-                <hr class="divider-line">
-                <div class="col-xl-12 config-footer-mid">
-                    <div class="col-md-4">
-                        <span class="footer-span">Sobre Baku-Stark</span>
+
+                <hr class="mt-4 mb-4">
+
+                <div class="col content-mid padding-basic">
+                    <div class="col-md-3 items-box">
+                        <h6>
+                            <i>SOBRE O PROJETO</i>
+                        </h6>
                         <ul>
                             <li>
-                                <a href="https://github.com/Baku-Stark/Portfolio-Projects">
-                                    Portfólio - GitHub
-                                </a>
+                                Criador: Wallace De Freitas (Baku-Stark)
                             </li>
                             <li>
                                 <a href="https://github.com/Baku-Stark/Portfolio-Projects">
-                                    Projetos
+                                    Portfólio de Projetos - GitHub
                                 </a>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 items-box">
+                        <h6>
+                            <i>CONTATOS</i>
+                        </h6>
+                        <ul>
                             <li>
                                 Email: <a href="https://tamakiamajiki360@gmail.com/" target="_blank">
                                     <i>tamakiamajiki360@gmail.com</i>
@@ -378,8 +410,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
-                        <span class="footer-span">Curso Em Vídeo</span>
+                    <div class="col-md-3 items-box">
+                        <h6>
+                            <i>EXPERIÊNCIA</i>
+                        </h6>
                         <ul>
                             <li>
                                 <a href="https://www.cursoemvideo.com/cursos/">
@@ -391,21 +425,6 @@
                                     Curso Em Vídeo - Youtube
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://twitter.com/guanabara">
-                                    Gustavo Guanabara - Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/gustavoguanabara">
-                                    Gustavo Guanabara - GitHub
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="footer-span">Sites de Programação</span>
-                        <ul>
                             <li>
                                 <a href="https://www.codewars.com/">
                                     Code Wars
@@ -429,14 +448,20 @@
                         </ul>
                     </div>
                 </div>
-                <hr class="divider-line">
-                <div class="col-xl-12 config-footer-bot">
-                    <p class="footer-text mb-0">
-                        Oi! Chegou até aqui, visitante? Eu agradeço e fico muito feliz de ler meu projeto portfólio.
-                    </p>
-                    <p class="footer-text mb-0">
-                        Me siga nas minhas redes sociais. Aceito todo tipo de ajuda para melhorar nas áreas Front e Back End e.
-                    </p>
+
+                <hr class="mt-4 mb-4">
+
+                <div class="col content-bot padding-basic">
+                        <p>
+                            <i>
+                                Oi! Chegou até aqui, visitante? Eu agradeço e fico muito feliz de ler meu projeto portfólio.
+                            </i>
+                        </p>
+                        <p>
+                            <i>
+                                Me siga nas minhas redes sociais. Aceito todo tipo de ajuda para melhorar nas áreas Front e Back End.
+                            </i>
+                        </p>
                 </div>
             </div>
         </div>

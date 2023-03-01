@@ -10,14 +10,17 @@ home.click(function(){
 // =============================================================================
 // MOBILE
 class MobileNavbar{
-    constructor(mobileMenu, navList, navLinks) {
+    constructor(mobileMenu, menuClose, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
+        this.menuClose = document.querySelector(menuClose);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
+
         this.activeClass = "active";
 
         this.handleClick = this.handleClick.bind(this);
     }
+
     animateLinks(){
         this.navLinks.forEach((link, index) => {
             link.style.animation
@@ -26,11 +29,16 @@ class MobileNavbar{
         });
     }
 
-
     handleClick(){
         this.animateLinks();
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
+        this.navList.classList.add(this.activeClass);
+
+        document.querySelector('body').style.overflowY = 'hidden'
+        
+        this.menuClose.addEventListener("click", () => {
+            this.navList.classList.remove(this.activeClass)
+            document.querySelector('body').style.overflowY = 'scroll'
+        })
     }
 
     addClickEvent(){
@@ -47,6 +55,7 @@ class MobileNavbar{
 
 const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
+    ".mobile-menu.close",
     ".nav-list",
     ".nav-list li",
 );
@@ -80,60 +89,4 @@ ScrollReveal().reveal('.slide300', slide300);
 ScrollReveal().reveal('.slide500', slide500);
 ScrollReveal().reveal('.resetContent', reset);
 // SLIDE
-// =============================================================================
-
-// =============================================================================
-// EVENTOS DE DESCRIÇÃO
-function hoverChangeDescription(nameCard, text){
-    var changeDescription = document.querySelector('.res')
-
-    document.querySelector(nameCard).addEventListener("mouseover", () => {
-        changeDescription.innerText = text
-    })
-
-    document.querySelector(nameCard).addEventListener("mouseout", () => {
-        changeDescription.innerText = `*Passe o mouse ou clique em alguma insígnia.`
-    })
-}
-
-hoverChangeDescription(
-    "#html",
-    "[HABILIDADE: 70%]"
-);
-
-hoverChangeDescription(
-    "#css",
-    "[HABILIDADE: 70%]"
-);
-
-hoverChangeDescription(
-    "#bootstrap",
-    "[HABILIDADE: 70%]"
-);
-
-hoverChangeDescription(
-    "#sass",
-    "[HABILIDADE: 70%]"
-);
-
-hoverChangeDescription(
-    "#javascript",
-    "[HABILIDADE: 50%]"
-);
-
-hoverChangeDescription(
-    "#python",
-    "[HABILIDADE: 90%]"
-);
-
-hoverChangeDescription(
-    "#markdown",
-    "[HABILIDADE: 90%]"
-)
-
-hoverChangeDescription(
-    "#git-plain",
-    "[HABILIDADE: 10%]"
-)
-// EVENTOS DE DESCRIÇÃO
 // =============================================================================

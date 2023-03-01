@@ -1,26 +1,15 @@
 @import '../sass/_variables.scss', '../sass/wave.scss', '../sass/navbar.scss', '../sass/card-profile.scss', '../sass/footer.scss';
 
-@font-face{
-	font-family: 'Rancing Hard';
-	src: url("../portfontes/RACING HARD.ttf") format('truetype');
-}
-
-@font-face{
-	font-family: 'Commando';
-	src: url("../portfontes/commando.ttf") format('truetype');
-}
-
-@font-face{
-    font-family: 'Critical Mass';
-    src: url("../portfontes/critical-mass-ldr.ttf") format('truetype');
-}
-
 /* --- CONFIGURAÇÃO [geral] ---*/
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+}
+
+.padding-basic{
+    padding: 20px 10px;
 }
 
 body{
@@ -49,10 +38,11 @@ h2.section-title{
     font-family: 'Critical Mass';
     text-shadow: 3px 3px 10px #f0f8ff48;
     animation: pulse 3s ease-in-out infinite;
-    @include screen770px{
+
+    @include screenTablet{
         font-size: 1.4rem;
     }
-    @include screen414px{
+    @include screenPhone{
         font-size: 1rem;
     }
 }
@@ -67,10 +57,6 @@ h3.card-title{
     font-family: 'Commando';
 }
 
-.flex{
-    display: flex;
-}
-
 .stage-imp{
     background-color: $darkGray;
 }
@@ -81,20 +67,18 @@ h3.card-title{
 
 .p-page{
     padding: 65px 90px;
-    @include screen770px{
+    @include screenTablet{
         padding: 65px 45px;
     }
-    @include screen480px{
-        padding: 65px 22px;
-    }
-    @include screen414px{
+
+    @include screenPhone{
         padding: 65px 5px;
     }
 }
 
 .pad-square{
     padding: 50px 50px;
-    @include screen480px{
+    @include screenPhone{
         padding: 50px 10px;
     }
 }
@@ -102,7 +86,7 @@ h3.card-title{
 img.tamaki-photo{
     width: 400px;
     height: 400px;
-    @include screen999px{
+    @include screenTablet-bootstrap{
         width: 100%;
     }
 }
@@ -115,69 +99,36 @@ button.button-port{
     padding: 10px 20px;
     background-color: $Black;
     font-family: 'Commando';
+
     i{
         color: $pureWhite;
     }
+
     a{
         text-decoration: none;
         transition: .3s ease-in-out;
         color: $pureWhite;
         &:hover{
-            color: $Cyan;
+            color: $Gray;
             transition: .3s ease-in-out;
         }
-    }
-    a.twitter:hover{
-        cursor: pointer;
-        background-image: linear-gradient(to right, $twitter);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: .3s ease-in-out;
-    }
-    a.instagram:hover{
-        cursor: pointer;
-        background-image: linear-gradient(to right, $instagram);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: .3s ease-in-out;
-    }
-    a.linkedin:hover{
-        cursor: pointer;
-        background-image: linear-gradient(to right, $linkedin);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: .3s ease-in-out;
-    }
-    a.github:hover{
-        cursor: pointer;
-        background-image: linear-gradient(to right, $github);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: .3s ease-in-out;
     }
 }
 /* --- CONFIGURAÇÃO [geral] ---*/
 
-/* --- CONFIGURAÇÃO [section => stage1] ---*/
-section.stage-1{
+/* --- CONFIGURAÇÃO [section => introdução] ---*/
+section.stage-intro{
     margin-top: 5vh;
-    @media screen and (max-width: 820px){
-        margin-top: 0;
-    }
-    @include screen480px{
-        margin-top: 0;
-    }
+
     div.layer-background{
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-image: url('../portimagens/bg-fluid.png');
+
         div.layer-color{
             background-color: $BlackOPC90;
+
             div.layer-block{
                 text-align: center;
                 @include Landing;
@@ -186,40 +137,28 @@ section.stage-1{
                     width: 350px;
                     height: 350px;
                     border-radius: 50%;
-                    @include screen770px{
-                        width: 300px;
-                        height: 300px;
-                    }
-                    @media screen and (max-width: 667px){
-                        width: 200px;
-                        height: 200px;
-                    }
-                    @include screen480px{
+                    
+                    @include screenLANDSCAPE{
                         width: 250px;
                         height: 250px;
                     }
                 }
+
                 h2.intro-text{
                     font-size: 4.5rem;
                     color: $pureWhite;
                     animation: float 3s ease-in-out infinite;
                     text-shadow: 3px 3px 0 $Black, -3px -3px 0 $Cyan;
                     font-family: 'Critical Mass';
-                    @include screen999px{
+
+                    @include screenTablet{
                         font-size: 3.5rem;
                     }
-                    @include screen770px{
-                        font-size: 3rem;
-                    }
-
-                    @media screen and (max-width: 667px){
+                    @include screenPhone{
                         font-size: 2rem;
                     }
-                    
-                    @include screen480px{
-                        font-size: 2.5rem;
-                    }
                 }
+
                 @keyframes float{
                     0%, 100%{transform: translateY(-20px);}
                     50%{transform: translateY(-100px);}
@@ -239,38 +178,39 @@ div.card{
     height: 40vh;
     margin-bottom: 5vh;
     border-radius: 25px;
-    @include screen1180px{
-        margin-bottom: 0;
-    }
-    @include screen770px{
-        margin-bottom: 5vh;
-    }
+
     div.card-body{
         border-radius: 20px;
         background-color: $lightGray;
+
         div.card-header{
             background-color: $lightBlack;
             padding: 10px 20px;
             border-radius: 15px 15px 0 0;
+
             i.badget-card{
                 font-size: 0.9em;
                 color: $pureWhite;
                 &:hover{
                     color: $lightBlue;
                 }
-                @include screen480px{
+                @include screenPhone{
                     font-size: 0.8em;
                 }
             }
         }
     }
+
     div.bot-card{
         padding: 5px;
+
         p{
             font-weight: bold;
         }
+
         ol{
             list-style: none;
+
             a{
                 text-decoration: none;
                 color: $Black;
@@ -289,6 +229,7 @@ div.card{
 /* --- CONFIGURAÇÃO [section => saiba mais] ---*/
 div.badgets-content{
     text-align: center;
+
     i.badget-filter{
         font-size: 5em;
         cursor: pointer;
@@ -296,13 +237,8 @@ div.badgets-content{
         &:hover{
             color: $lightBlue;
         }
-        @include screen1199px{
-            font-size: 4em;
-        }
-        @include screen999px{
-            font-size: 3.1em;
-        }
-        @include screen480px{
+
+        @include screenPORTRAIT{
             font-size: 3em;
         }
     }

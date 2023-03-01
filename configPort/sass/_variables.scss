@@ -1,3 +1,18 @@
+@font-face{
+	font-family: 'Rancing Hard';
+	src: url("../portfontes/RACING HARD.ttf") format('truetype');
+}
+
+@font-face{
+	font-family: 'Commando';
+	src: url("../portfontes/commando.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: 'Critical Mass';
+    src: url("../portfontes/critical-mass-ldr.ttf") format('truetype');
+}
+
 $Black: #0D0D0D;
 $BlackOPC90: #0d0d0de6;
 $BlackOPC50: #0D0D0D79;
@@ -44,62 +59,42 @@ $width_ref: 1180;
     justify-content: $justify-content;
 }
 
-@mixin screenLandscape{
+@mixin screenLANDSCAPE{
+    // celular deitado
     @media (orientation: landscape){
         @content;
     }
 }
 
-@mixin screen1200px{
-    @media screen and (min-width: 1200px){
+@mixin screenPORTRAIT{
+    // celular em pé
+    @media (orientation: portrait){
         @content;
     }
 }
 
-@mixin screen1199px{
-    @media screen and (max-width: 1199px){
+@mixin screenTablet{
+    // and (min-width: 768px) and (max-width: 1024px)
+    @media screen and (max-width: 1024px){
         @content;
     }
 }
 
-@mixin screen1180px{
-    @media screen and (max-width: 1180px) {
+@mixin screenTablet-bootstrap{
+    @media screen and (max-width: 991px){
         @content;
     }
 }
 
-@mixin screen1020px{
-    @media screen and (max-width: 1020px) {
+@mixin screenTablet-low{
+    @media screen and (max-width: 825px){
         @content;
     }
 }
 
-@mixin screen999px{
-    @media screen and (max-width: 999px){
-        @content;
-    }
-}
-
-@mixin screen820px{
-    @media screen and (max-width: 820px){
-        @content;
-    }
-}
-
-@mixin screen770px{
-    @media screen and (max-width: 770px){
-        @content;
-    }
-}
-
-@mixin screen480px{
+@mixin screenPhone{
+    // and (min-width: 320px) and (max-width: 480px)
     @media screen and (max-width: 480px){
-        @content;
-    }
-}
-
-@mixin screen414px{
-    @media screen and (max-width: 414px){
         @content;
     }
 }
