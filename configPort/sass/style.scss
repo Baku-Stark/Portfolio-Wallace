@@ -118,7 +118,6 @@ button.button-port{
 
 /* --- CONFIGURAÇÃO [section => introdução] ---*/
 section.stage-intro{
-    margin-top: 5vh;
 
     div.layer-background{
         background-size: cover;
@@ -133,14 +132,19 @@ section.stage-intro{
                 text-align: center;
                 @include Landing;
                 @include flexFlexDir-JC(column, center);
+
+                @include screenLANDSCAPE{
+                    justify-content: flex-end;
+                }
+
                 img.astro{
                     width: 350px;
                     height: 350px;
                     border-radius: 50%;
                     
                     @include screenLANDSCAPE{
-                        width: 250px;
-                        height: 250px;
+                        width: 200px;
+                        height: 200px;
                     }
                 }
 
@@ -178,6 +182,9 @@ div.card{
     height: 40vh;
     margin-bottom: 5vh;
     border-radius: 25px;
+    @include screenLANDSCAPE{
+        margin-bottom: 25vh;
+    }
 
     div.card-body{
         border-radius: 20px;
