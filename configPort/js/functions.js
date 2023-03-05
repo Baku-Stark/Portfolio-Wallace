@@ -63,6 +63,14 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.init();
+
+function resetWidow(){
+    if(window.innerWidth > 1024){
+        document.querySelector('body').style.overflowY = 'scroll'
+    }
+}
+
+resetWidow()
 // MOBILE
 // =============================================================================
 

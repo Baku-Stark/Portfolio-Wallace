@@ -138,14 +138,9 @@ section.stage-intro{
                 }
 
                 img.astro{
-                    width: 350px;
-                    height: 350px;
+                    width: 25vw;
+                    height: 50vh;
                     border-radius: 50%;
-                    
-                    @include screenLANDSCAPE{
-                        width: 200px;
-                        height: 200px;
-                    }
                 }
 
                 h2.intro-text{
