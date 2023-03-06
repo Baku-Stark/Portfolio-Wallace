@@ -46,6 +46,9 @@ class MobileNavbar{
 
     addClickEvent(){
         this.mobileMenu.addEventListener("click", this.handleClick)
+        if(window.innerWidth > 1024){
+            document.querySelector('body').style.overflowY = 'scroll'
+        }
     }
 
     init() {
@@ -63,14 +66,6 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.init();
-
-function resetWidow(){
-    if(window.innerWidth > 1024){
-        document.querySelector('body').style.overflowY = 'scroll'
-    }
-}
-
-resetWidow()
 // MOBILE
 // =============================================================================
 
