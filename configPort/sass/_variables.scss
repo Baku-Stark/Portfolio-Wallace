@@ -59,6 +59,24 @@ $width_ref: 1180;
     justify-content: $justify-content;
 }
 
+@mixin GridLayout-Columns($content){
+    display: grid;
+    grid-template-columns: $content;
+}
+
+@mixin GridLayout-Rows($rows){
+    display: grid;
+    grid-template-rows: $rows;
+}
+
+@mixin GridLayout-RowsColumns($rows, $content){
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $content;
+}
+
+// ======================== MEDIA QUERY
+
 @mixin screenLANDSCAPE{
     // celular deitado
     @media (orientation: landscape){

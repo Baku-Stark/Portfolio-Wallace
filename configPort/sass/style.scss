@@ -39,6 +39,10 @@ h2.section-title{
     text-shadow: 3px 3px 10px #f0f8ff48;
     animation: pulse 3s ease-in-out infinite;
 
+    @include screenPORTRAIT{
+        text-align: center;
+    }
+
     @include screenTablet{
         font-size: 1.4rem;
     }
@@ -174,17 +178,21 @@ section.stage-intro{
 /* --- CONFIGURAÇÃO [section => stage1] ---*/
 
 /* --- CONFIGURAÇÃO [section => projetos] ---*/
-div.card.border-dark-special{
-    background-color: #0d0d0d;
+div.cards-container {
+    align-items: center;
+    @include GridLayout-Columns(repeat(3, 1fr));
+
+    @include screenPORTRAIT{
+        @include GridLayout-Columns(repeat(1, 1fr));
+    }
 }
 
 div.card{
     height: 40vh;
+    margin-left: 2vw;
     margin-bottom: 5vh;
     border-radius: 25px;
-    @include screenLANDSCAPE{
-        margin-bottom: 25vh;
-    }
+    background-color: #0d0d0d !important;
 
     div.card-body{
         border-radius: 20px;
@@ -229,6 +237,16 @@ div.card{
                 }
             }
         }
+    }
+}
+
+div.grid-blocks-2{
+    text-align: center;
+    align-items: center;
+    @include GridLayout-Columns(repeat(2, 1fr));
+
+    @include screenPORTRAIT{
+        @include GridLayout-Columns(repeat(1, 1fr));
     }
 }
 /* --- CONFIGURAÇÃO [section => projetos] ---*/

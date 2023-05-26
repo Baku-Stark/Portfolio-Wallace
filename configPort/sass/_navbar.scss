@@ -19,7 +19,7 @@ nav.navbar-portfolio{
             font-size: 1.7rem;
         }
         @include screenPhone{
-            font-size: 1.5rem;
+            display: none;
         }
     }
 
@@ -63,6 +63,39 @@ nav.navbar-portfolio{
             transition: transform 0.3s ease-in-out;
             background-color: $lightBlack;
             @include flexFlexDir-JC(column, space-evenly);
+        }
+
+        div.close{
+            display: none;
+
+            @include screenTablet{
+                padding: 5px;
+                text-align: center;
+                align-items: center;
+                @include GridLayout-Columns(2fr 1fr);
+
+                h1.sidebar-title{
+                    font-size: 0.8rem;
+                    color: $lightBlue;
+                    font-family: 'Rancing Hard';
+                }
+
+                button{
+                    padding: 0px;
+                    margin-left: 5px;
+                    border-radius: 15px;
+                    color: $aliceBlue;
+                    background-color: $Black;
+
+                    .bi-x{
+                        font-size: 2rem;
+                    }
+
+                    &:hover{
+                        color: $lightBlue;
+                    }
+                }
+            }
         }
 
         li{

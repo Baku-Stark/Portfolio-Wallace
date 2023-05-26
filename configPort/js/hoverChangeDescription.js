@@ -49,3 +49,13 @@ hoverChangeDescription(
     "#git-plain",
     "[HABILIDADE: 45%] * Git é um software de controle distruibuído. No caminho para manipular o Git por completo."
 )
+
+hoverChangeDescription(
+    "#cpp",
+    "[HABILIDADE: 10%] * C++ ."
+)
+
+hoverChangeDescription(
+    "#rust",
+    "[HABILIDADE: 10%] * Rust."
+)
