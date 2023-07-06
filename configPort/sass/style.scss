@@ -182,7 +182,7 @@ div.cards-container {
     align-items: center;
     @include GridLayout-Columns(repeat(3, 1fr));
 
-    @include screenPORTRAIT{
+    @include screenTablet-bootstrap{
         @include GridLayout-Columns(repeat(1, 1fr));
     }
 }
