@@ -35,8 +35,6 @@ class MobileNavbar{
     handleClick(){
         this.animateLinks();
         this.navList.classList.add(this.activeClass);
-
-        document.querySelector('body').style.overflowY = 'hidden'
         
         this.menuClose.addEventListener("click", () => {
             this.navList.classList.remove(this.activeClass)
