@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![image](https://user-images.githubusercontent.com/103138773/205184336-fbec17a6-2042-44e4-b358-e4e9d980c57d.png)
+<img src="assets/img/portfolio.png" alt="Portfolio-Wallace" />
 
 **[Portfólio - Wallace](https://baku-stark.github.io/Portfolio-Wallace/indexBaku.html)**
 
