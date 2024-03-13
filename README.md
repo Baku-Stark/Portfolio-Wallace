@@ -6,6 +6,9 @@
 
 **[Portfólio - Wallace](https://baku-stark.github.io/Portfolio-Wallace/indexBaku.html)**
 
+	
+💻 Update: `Portfolio v2-0`
+
 </div>
 
 #
@@ -18,6 +21,12 @@
 
 #
 
+# 👾 Skills
+
+> **PT-BR** - Parte do projeto com emblemas contendo informações sobre minhas habilidades.
+
+> **EN-US** - Part of the project with badges containing information about my skills.
+
 # 👾 PROJECTS
 
 > **PT-BR** - Seção onde está localizado os cards com os projetos em Python, JavaScript, Html e Css que realizei nesta minha trajetória de desenvolvedor Full Stack.
@@ -25,12 +34,6 @@
 > **EN-US** - Section where the cards with projects in Python, JavaScript, Html and CSS that I carried out in my journey as a Full Stack developer are located.
 
 #
-
-# 👾 SAIBA MAIS
-
-> **PT-BR** - Seção final do projeto com as minhas insígnias sobre minhas habilidades.
-
-> **EN-US** - Final section of the project with my badges about my skills.
 
 #
 
