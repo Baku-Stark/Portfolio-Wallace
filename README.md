@@ -4,7 +4,7 @@
 
 <img src="assets/img/portfolio.png" alt="Portfolio-Wallace" />
 
-**[Portfólio - Wallace](https://baku-stark.github.io/Portfolio-Wallace/indexBaku.html)**
+**[Portfólio - Wallace](https://baku-stark.github.io/Portfolio-Wallace/index.html)**
 
 	
 💻 Update: `Portfolio v2-0`
