@@ -71,7 +71,7 @@
     </tr>
     <tr align="center">
         <td>
-            <img height="60" src="configPort/portimagens/wallace.jpg">
+            <img height="60" src="assets/img/wallace.jpg">
             <br>
             <a href="https://github.com/Baku-Stark">Baku-Stark</a>
         </td>
