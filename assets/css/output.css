@@ -271,10 +271,10 @@ main.main-container div.home-links {
       display: grid;
       grid-template-columns: repeat(1, 1fr); } }
 body {
-  background-image: url("../img/gojo_bg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("../img/gojo_bg.jpeg");
 }
 
 main.main-container {
