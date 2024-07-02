@@ -1,4 +1,4 @@
-@import 'variables', 'glitch.scss', 'scrollbar.scss', 'slide.scss';
+@import 'variables', 'glitch.scss', 'scrollbar.scss';
 
 :root{
 	--background: #000;
@@ -47,10 +47,10 @@
 
 .main-text{
 	padding: 10px;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	text-align: center;
 	color: var(--main-color);
-	font-family: 'Press Start 2P' , sans-serif;
+    font-family: 'Press Start 2P' , sans-serif;
 }
 
 .container-line-2{
@@ -68,6 +68,7 @@
 }
 
 .container-column-2{
+    gap: 10px;
 	padding: 0px 100px;
 	@include GridLayout-Columns(repeat(2, 1fr));
 
@@ -78,6 +79,7 @@
 }
 
 .container-column-3{
+    gap: 10px;
 	padding: 0px 100px;
 	@include GridLayout-Columns(repeat(3, 1fr));
 
@@ -97,15 +99,21 @@
     }
 }
 
+body{
+    background-image: url("../img/gojo_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 main.main-container{
     @include GridLayout-Columns(repeat(1, 1fr));
+    background-color: #000000ee;
 
     .home-container{
         background-image: url('../img/gojo.gif');
     }
-}
 
-main.main-container{
     div.home-links{
         z-index: 100;
         @include GridLayout-Columns(repeat(2, 1fr));
@@ -166,6 +174,7 @@ main.main-container{
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        box-shadow: -50px 0 50px #000;
 
         &:after{
             content: "";
@@ -182,7 +191,6 @@ main.main-container{
 
     section.topic-container{
         padding: 150px 0;
-        background-color: var(--background);
     }
 }
 
@@ -416,18 +424,59 @@ div.card div.bot-card ol{
 
 /* =============================== */
 /* PROJECTS CARDS */
-h3.card-title{
-    i.badget-card{
-        @include screenTablet{
-            font-size: 1rem;
-        }
+div.card{
+    width: 100%;
+}
 
-        @include screenTablet-low{
-            display: none;
-        }
-    }
+div.card .my_bg_dark{
+    padding: 10px;
+    font-weight: bold;
+    color: var(--color);
+    background-color: var(--light-background);
+}
 
-    @include screenTablet{
-        font-size: 1rem;
-    }
+div.card .my_bg_dark i{
+    margin: 5px;
+}
+
+div.card div.my_card_body .my_card_body_text{
+    padding: 30px;
+    text-align: center;
+    background-color: #000000d5;
+}
+
+div.my_card_body .my_card_body_text p{
+    font-weight: bolder;
+}
+
+div.my_card_body .my_card_body_text p.s_1{
+    color: #01b1f7;
+}
+
+div.my_card_body .my_card_body_text p.s_2{
+    color: #fc4949;
+}
+
+div.my_card_body .my_card_body_text p.s_3{
+    color: #008000;
+}
+
+div.card div.s_1,
+div.card div.s_2,
+div.card div.s_3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.card div.s_1{
+    background-image: url("../img/s_1.jpeg");
+}
+
+div.card div.s_2{
+    background-image: url("../img/s_2.jpeg");
+}
+
+div.card div.s_3{
+    background-image: url("../img/s_3.jpeg");
 }
