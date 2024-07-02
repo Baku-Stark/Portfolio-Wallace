@@ -146,6 +146,7 @@
   grid-template-rows: repeat(3, 1fr); }
 
 .container-column-2 {
+  gap: 10px;
   padding: 0px 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
@@ -156,6 +157,7 @@
       grid-template-columns: repeat(1, 1fr); } }
 
 .container-column-3 {
+  gap: 10px;
   padding: 0px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
@@ -402,14 +404,49 @@ div.card div.bot-card ol {
 
 /* =============================== */
 /* PROJECTS CARDS */
-@media screen and (max-width: 1024px) {
-  h3.card-title i.badget-card {
-    font-size: 1rem; } }
-@media screen and (max-width: 825px) {
-  h3.card-title i.badget-card {
-    display: none; } }
-@media screen and (max-width: 1024px) {
-  h3.card-title {
-    font-size: 1rem; } }
+div.card {
+  width: 100%; }
+
+div.card .my_bg_dark {
+  padding: 10px;
+  font-weight: bold;
+  color: var(--color);
+  background-color: var(--light-background); }
+
+div.card .my_bg_dark i {
+  margin: 5px; }
+
+div.card div.my_card_body .my_card_body_text {
+  padding: 30px;
+  text-align: center;
+  background-color: #000000d5; }
+
+div.my_card_body .my_card_body_text p {
+  font-weight: bolder; }
+
+div.my_card_body .my_card_body_text p.s_1 {
+  color: #01b1f7; }
+
+div.my_card_body .my_card_body_text p.s_2 {
+  color: #fc4949; }
+
+div.my_card_body .my_card_body_text p.s_3 {
+  color: #008000; }
+
+div.card div.s_1,
+div.card div.s_2,
+div.card div.s_3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+div.card div.s_1 {
+  background-image: url("../img/s_1.jpeg"); }
+
+div.card div.s_2 {
+  background-image: url("../img/s_2.jpeg"); }
+
+div.card div.s_3 {
+  background-image: url("../img/s_3.jpeg"); }
 
 /*# sourceMappingURL=output.css.map */

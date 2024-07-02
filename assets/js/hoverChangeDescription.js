@@ -46,8 +46,14 @@ hoverChangeDescription(
 
 hoverChangeDescription(
     "#rust",
-    "Rust [Course: 10%]",
+    "Rust [Course: 50%]",
     "*Rust is a compiled multi-paradigm programming language developed by Mozilla Research. It is designed to be secure, competitive and practical."
+);
+
+hoverChangeDescription(
+    "#ruby",
+    "Ruby [Course: 10%]",
+    "*Ruby is a popular, general-purpose programming language. You may have heard of it in connection to Ruby on Rails, one of the most popular web development frameworks in any programming language. Although much of Ruby’s popularity comes from this connection, Ruby has many uses, including web scraping, static site generation, command-line tools, automation, DevOps, and data processing.."
 );
 
 hoverChangeDescription(
