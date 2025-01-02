@@ -11,149 +11,161 @@ function hoverChangeDescription(nameCard, lang, text){
 hoverChangeDescription(
     "#python",
     "Python [Course: 100%] ",
-    "* Python is a programming language widely used in web applications, software development, data science, and machine learning."
+    "* Python é uma linguagem de programação amplamente usada em aplicativos web, Desenvolvimento de Software, Data Science e Machine Learning."
 );
 
 hoverChangeDescription(
     "#typescript",
     "TypeScript [Course: 100%] ",
-    "* TypeScript is an open source programming language developed by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language."
+    "* TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem."
 );
 
 hoverChangeDescription(
     "#cpp",
     "C++ [Course: 100%] ",
-    "* C++ is a general-purpose, multi-paradigm compiled programming language."
+    "* C++ é uma linguagem de programação compilada multiparadigma de uso geral."
+);
+
+hoverChangeDescription(
+    "#c",
+    "C [Course: 100%] ",
+    "* C linguagem muito popular na criação de Sistemas Operacionais, como o Linux."
 );
 
 hoverChangeDescription(
     "#javascript",
     "JavaScript [Course: 100%] ",
-    "* JavaScript is a structured, high-level scripting, weakly dynamically typed, multi-paradigm interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main technologies of the World Wide Web (WWW)."
+    "* JavaScript é uma linguagem de programação estruturada, de script de alto nível, fracamente tipada dinamicamente e interpretada por multiparadigma. Junto com HTML e CSS, JavaScript é uma das três principais tecnologias da World Wide Web (WWW)."
 );
 
 hoverChangeDescription(
     "#java",
     "Java [Course: 100%] ",
-    "* Java is a cross-platform, object-oriented, network-centric language that can be used as a platform in itself. It's a fast, secure, and reliable programming language for coding everything from mobile applications and enterprise software to big data applications and server technologies.."
+    "* Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si mesma. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicativos móveis e software empresarial até aplicativos de big data e tecnologias de servidor."
 );
 
 hoverChangeDescription(
     "#mkd",
     "MarkDown [Course: 100%]",
-    "* Markdown is a simple markup format, that is, text marking. The idea is to mark text informing what is important, what is a topic, what links and images are, without the need to use more complex markups, such as HTML. It's a pretty trivial format."
+    "* Markdown é um formato de marcação simples, ou seja, marcação de texto. A ideia é marcar texto informando o que é importante, o que é tópico, o que são links e imagens, sem a necessidade de usar marcações mais complexas, como HTML. É um formato bem trivial."
 );
 
 hoverChangeDescription(
     "#rust",
     "Rust [Course: 50%]",
-    "*Rust is a compiled multi-paradigm programming language developed by Mozilla Research. It is designed to be secure, competitive and practical."
+    "* Rust é uma linguagem de programação multiparadigma compilada desenvolvida pela Mozilla Research. Ela é projetada para ser segura, competitiva e prática."
 );
 
 hoverChangeDescription(
     "#ruby",
     "Ruby [Course: 10%]",
-    "*Ruby is a popular, general-purpose programming language. You may have heard of it in connection to Ruby on Rails, one of the most popular web development frameworks in any programming language."
+    "* Ruby é uma linguagem de programação popular e de propósito geral. Você pode ter ouvido falar dela em conexão com Ruby on Rails, um dos frameworks de desenvolvimento web mais populares em qualquer linguagem de programação."
 );
 
 hoverChangeDescription(
     "#html",
     "Html [Course: 100%]",
-    "* HTML5 is responsible for creating the structure of a website (an extremely important component)."
+    "* O HTML5 é responsável por criar a estrutura de um site (um componente extremamente importante)."
 );
 
 hoverChangeDescription(
     "#css",
     "Css [Course: 100%]",
-    "* CSS is used for styling a website."
+    "* CSS3 serve para estilização de um site, utilizando-se das referêcias (class e id's) para alterar os componentes."
 );
 
 hoverChangeDescription(
     "#bstrap",
     "BootStrap [Course: 100%]",
-    "* Bootstrap is an open source web framework for developing interface and front-end components for websites and web applications, using HTML, CSS and JavaScript, based on design models for typography, improving the user experience on a website friendly and responsive."
+    "* Bootstrap é um framework web de código aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, utilizando HTML, CSS e JavaScript, baseado em modelos de design para tipografia, melhorando a experiência do usuário em um site amigável e responsivo."
 );
 
 hoverChangeDescription(
     "#twind",
     "Tailwind [Course: 100%]",
-    "* Tailwind CSS is an open source CSS framework. The main feature of this library is that unlike other CSS frameworks like Bootstrap."
+    "* Tailwind CSS é um framework CSS de código aberto. O principal recurso desta biblioteca é que, diferente de outros frameworks CSS como Bootstrap."
 );
 
 hoverChangeDescription(
     "#sass",
     "Sass [Course: 100%]",
-    "* SASS is a code extension, used to boost CSS."
+    "* SASS é uma extensão para impulsionar a escrita CSS3."
 );
 
 hoverChangeDescription(
     "#react",
     "React [Course: 100%]",
-    "* React is an open-source JavaScript front-end library focused on creating user interfaces on web pages."
+    "* React é uma biblioteca front-end JavaScript de código aberto focada na criação de interfaces de usuário em páginas da web."
 );
 
 hoverChangeDescription(
     "#vuejs",
     "Vue [Course: 100%]",
-    "* VueJS is an open-source JavaScript framework focused on developing user interfaces and single-page applications."
+    "* VueJS é um framework JavaScript de código aberto focado no desenvolvimento de interfaces de usuário e aplicativos de página única."
 );
 
 hoverChangeDescription(
     "#angular",
     "Angular [Course: 100%]",
-    "* AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries."
+    "* AngularJS é um conjunto de ferramentas para construir o framework mais adequado ao desenvolvimento do seu aplicativo. Ele é totalmente extensível e funciona bem com outras bibliotecas."
 );
 
 hoverChangeDescription(
     "#flask",
     "Flask [Course: 100%]",
-    "* Flask is a small web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries, maintaining a simple but extensible core."
+    "* Flask é um pequeno framework web escrito em Python. Ele é classificado como um microframework porque não requer ferramentas ou bibliotecas específicas, mantendo um núcleo simples, mas extensível."
 );
 
 hoverChangeDescription(
     "#django",
     "Django [Course: 100%]",
-    "* Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design."
+    "* Django é um framework web Python de alto nível que incentiva o desenvolvimento rápido e o design limpo e pragmático."
 );
 
 hoverChangeDescription(
     "#mysql",
     "MySQL [Course: 100%]",
-    "* MySQL is a database management system that uses the SQL language as an interface. It is currently one of Oracle Corporation's most popular database management systems, with more than 10 million installations worldwide."
+    "* MySQL é um sistema de gerenciamento de banco de dados que usa a linguagem SQL como interface. Atualmente, é um dos sistemas de gerenciamento de banco de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações no mundo todo."
+);
+
+hoverChangeDescription(
+    "#postgresql",
+    "PostgreSQL [Course: 100%]",
+    "* PostgreSQL é um banco de dados objeto-relacional de código aberto."
 );
 
 hoverChangeDescription(
     "#sqlite",
     "SQLite [Course: 100%]",
-    "* SQLite is a C language library that implements an embedded SQL database. Programs that use the SQLite library can access the SQL database without running a separate DBMS process."
+    "* SQLite é uma biblioteca de linguagem C que implementa um banco de dados SQL incorporado. Programas que usam a biblioteca SQLite podem acessar o banco de dados SQL sem executar um processo DBMS separado."
 );
 
 hoverChangeDescription(
     "#mongodb",
     "MongoDB [Course: 100%]",
-    "* MongoDB is a free, open source, cross-platform document-oriented database software written in the C++ language. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas."
+    "* MongoDB é um software de banco de dados multiplataforma, gratuito, de código aberto, orientado a documentos, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas."
 );
 
 hoverChangeDescription(
     "#adonis",
     "Adonis [Course: 100%]",
-    "* AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more."
+    "* AdonisJS é um framework web TypeScript-first para construir aplicativos web e servidores de API. Ele vem com suporte para testes, ferramentas modernas, um ecossistema de pacotes oficiais e muito mais."
 );
 
 hoverChangeDescription(
     "#express",
     "Express [Course: 100%]",
-    "* Express.js is a framework for Node.js that provides minimal resources for building web servers. It was released as free and open source software under the MIT License. It is one of the most popular Node.js server frameworks."
+    "* Express.js é um framework para Node.js que fornece recursos mínimos para construir servidores web. Foi lançado como software livre e de código aberto sob a Licença MIT. É um dos frameworks de servidor Node.js mais populares."
 );
 
 hoverChangeDescription(
     "#axios",
     "Axios [Course: 100%]",
-    "* Axios is a simple promise based HTTP client for the browser and node.js. Axios provides a simple to use library in a small package with a very extensible interface."
+    "* Axios é um cliente HTTP simples baseado em promessas para o navegador e node.js. Axios fornece uma biblioteca simples de usar em um pequeno pacote com uma interface muito extensível."
 );
 
 hoverChangeDescription(
     "#vite",
     "Vite [Course: 100%]",
-    "* Vite is a local development server written by Evan You, the creator of Vue.js, and used by default for Vue and for React project templates. It has support for TypeScript and JSX. It uses Rollup and esbuild internally for packaging."
+    "* Vite é um servidor de desenvolvimento local escrito por Evan You, o criador do Vue.js, e usado por padrão para Vue e para modelos de projeto React. Ele tem suporte para TypeScript e JSX. Ele usa Rollup e esbuild internamente para empacotamento."
 );
