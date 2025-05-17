@@ -1,4 +1,6 @@
-@import 'variables', 'glitch.scss', 'scrollbar.scss';
+@use './variables';
+@use './glitch.scss';
+@use './scrollbar.scss';
 
 :root{
 	--background: #000;
@@ -22,15 +24,15 @@
     animation: pulse 3s ease-in-out infinite;
 	font-family: 'Critical Mass';
 
-    @include screenTablet{
+    @include variables.screenTablet{
         font-size: 3rem;
     }
 
-    @include screenTablet-low{
+    @include variables.screenTablet-low{
         font-size: 2rem;
     }
 
-    @include screenPhone{
+    @include variables.screenPhone{
         font-size: 1.4rem;
     }
 }
@@ -55,46 +57,46 @@
 
 .container-line-2{
 	display: grid;
-	@include GridLayout-Rows(0.5fr 2fr);
+	@include variables.GridLayout-Rows(0.5fr 2fr);
 
-    @include screenTablet{
-        @include GridLayout-Rows(0.2fr 2fr);
+    @include variables.screenTablet{
+        @include variables.GridLayout-Rows(0.2fr 2fr);
     }
 }
 
 .container-line-3{
 	display: grid;
-    @include GridLayout-Rows(repeat(3, 1fr));
+    @include variables.GridLayout-Rows(repeat(3, 1fr));
 }
 
 .container-column-2{
     gap: 10px;
 	padding: 0px 100px;
-	@include GridLayout-Columns(repeat(2, 1fr));
+	@include variables.GridLayout-Columns(repeat(2, 1fr));
 
-    @include screenPhone{
+    @include variables.screenPhone{
         padding: 0px 20px;
-        @include GridLayout-Columns(repeat(1, 1fr));
+        @include variables.GridLayout-Columns(repeat(1, 1fr));
     }
 }
 
 .container-column-3{
     gap: 10px;
 	padding: 0px 100px;
-	@include GridLayout-Columns(repeat(3, 1fr));
+	@include variables.GridLayout-Columns(repeat(3, 1fr));
 
-    @include screenTablet{
-        @include GridLayout-Columns(repeat(1, 1fr));
+    @include variables.screenTablet{
+        @include variables.GridLayout-Columns(repeat(1, 1fr));
     }
 
-    @include screenPhone{
+    @include variables.screenPhone{
         padding: 0px 20px;
     }
 }
 
 .satoru{
     width: 50%;
-    @include screenTablet{
+    @include variables.screenTablet{
         width: 100%;
     }
 }
@@ -107,7 +109,7 @@ body{
 }
 
 main.main-container{
-    @include GridLayout-Columns(repeat(1, 1fr));
+    @include variables.GridLayout-Columns(repeat(1, 1fr));
     background-color: #000000ee;
 
     .home-container{
@@ -116,7 +118,7 @@ main.main-container{
 
     div.home-links{
         z-index: 100;
-        @include GridLayout-Columns(repeat(2, 1fr));
+        @include variables.GridLayout-Columns(repeat(2, 1fr));
 
         article.home-main-links a,
         article.home-btn-link a#cv{
@@ -126,14 +128,14 @@ main.main-container{
         }
 
         article.home-main-links{
-            @include flexAlignI-JC(center, space-evenly);
+            @include variables.flexAlignI-JC(center, space-evenly);
 
             a:hover{
                 text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
                 -webkit-transform: scale(1.2);
             }
 
-            @include screenTablet{
+            @include variables.screenTablet{
                 margin-bottom: 15px;
             }
         }
@@ -155,8 +157,8 @@ main.main-container{
             }
         }
 
-        @include screenTablet{
-            @include GridLayout-Columns(repeat(1, 1fr));
+        @include variables.screenTablet{
+            @include variables.GridLayout-Columns(repeat(1, 1fr));
         }
     }
 
@@ -291,7 +293,7 @@ div.card div.bot-card ol{
         }
 
         div.card-dex-top-profile{
-            @include GridLayout-Columns(1fr 6fr);
+            @include variables.GridLayout-Columns(1fr 6fr);
         }
 
         div.card-dex-top-profile{
@@ -302,7 +304,7 @@ div.card div.bot-card ol{
         }
 
         div.card-dex-top-profile-text-box{
-            @include GridLayout-Rows(1fr 4fr);
+            @include variables.GridLayout-Rows(1fr 4fr);
 
             article{
                 color: var(--main-color);
@@ -326,7 +328,7 @@ div.card div.bot-card ol{
             height: 100%;
             border-radius: 15px;
             background-color: var(--panel-dex-bg);
-            @include GridLayout-Rows(1fr 5fr);
+            @include variables.GridLayout-Rows(1fr 5fr);
 
             div.card-dex-box-panel-search{
                 padding: 15px;
@@ -395,29 +397,29 @@ div.card div.bot-card ol{
                         }
                     }
 
-                    @include GridLayout-Columns(repeat(5, 1fr));
+                    @include variables.GridLayout-Columns(repeat(5, 1fr));
               
-                    @include screenTablet{
-                        @include GridLayout-Columns(repeat(2, 1fr));
+                    @include variables.screenTablet{
+                        @include variables.GridLayout-Columns(repeat(2, 1fr));
                     }
 
-                    @include screenPhone{
-                        @include GridLayout-Columns(repeat(1, 1fr));
+                    @include variables.screenPhone{
+                        @include variables.GridLayout-Columns(repeat(1, 1fr));
                     }
                 }
               }
         
-            @include screenTablet{
-                @include GridLayout-Rows(1fr 13fr);
+            @include variables.screenTablet{
+                @include variables.GridLayout-Rows(1fr 13fr);
             }
 
-            @include screenPhone{
-                @include GridLayout-Rows(1fr 25fr);
+            @include variables.screenPhone{
+                @include variables.GridLayout-Rows(1fr 25fr);
             }
         }
     }
 
-    @include screenTablet{
+    @include variables.screenTablet{
         padding: 0 10px;
     }
 }
@@ -461,6 +463,10 @@ div.my_card_body .my_card_body_text p.s_3{
     color: #008000;
 }
 
+div.my_card_body .my_card_body_text p.s_4{
+    color: #ffff00;
+}
+
 div.card div.s_1,
 div.card div.s_2,
 div.card div.s_3{
@@ -479,4 +485,8 @@ div.card div.s_2{
 
 div.card div.s_3{
     background-image: url("../img/s_3.jpeg");
+}
+
+div.card div.s_4{
+    background-image: url("../img/s_4.jpeg");
 }
