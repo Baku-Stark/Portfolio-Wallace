@@ -123,6 +123,12 @@ hoverChangeDescription(
 );
 
 hoverChangeDescription(
+    "#spring",
+    "Spring [Course: 100%]",
+    "* Framework Java para aplicações enterprise. Robusto, modular e com suporte a microsserviços. Contendo também Injeção de dependência, Spring Boot, MVC e Security."
+);
+
+hoverChangeDescription(
     "#mysql",
     "MySQL [Course: 100%]",
     "* MySQL é um sistema de gerenciamento de banco de dados que usa a linguagem SQL como interface. Atualmente, é um dos sistemas de gerenciamento de banco de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações no mundo todo."
